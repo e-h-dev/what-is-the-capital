@@ -7,12 +7,12 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     width:100vw;
-    background-image: url("assets/images/hero-image.jpg");
+    background-image: url("../images/hero-image.jpg");
     background-size: cover;
 }
 
 .opaque{
-    background-color: #7fffd4a6;
+    background-color: rgba(127, 255, 212, 0.5);
     height: 100vh;
     width:100vw;
     position: absolute;
