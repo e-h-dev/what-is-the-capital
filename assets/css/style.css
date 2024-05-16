@@ -116,6 +116,9 @@ h1{
 }
 
 .lives-section{
+    background-color: rgba(127, 255, 212, 0.4);
+    padding: 20px;
+    border-radius: 15px;
     margin-top: 130px;
     margin-left: 950px;
     font-size: 28px;
