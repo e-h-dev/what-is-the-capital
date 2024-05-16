@@ -111,6 +111,22 @@ h1{
     padding: 15px;
 }
 
+.lives-section{
+    margin-top: 130px;
+    margin-left: 950px;
+    font-size: 28px;
+}
+
+.life-section{
+    color:rgb(163, 5, 5);
+    font-size:  32px;
+    z-index: 2;
+}
+
+.life-section i{
+    padding: 10px;
+}
+
 /*--------styles for level-2 page -----------*/
 
 .game-area-level-2{
