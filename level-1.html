@@ -6,8 +6,10 @@
     <title>What's the Capital-Level-1</title>
     <link rel="icon" href="assets/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+     rel="stylesheet"  type='text/css'>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
             <section class="game-area">
                 <div class="game-area-background">
                     <h1 id="question"></h1>
-                    <div id="next"><button></button></div>
+                    <div id="next"><button>Next Question</button></div>
                 </div>
                 <section id="multiple-choice">
                     <div id="incorrect-choice"></div>
@@ -32,6 +34,15 @@
             </section>
             <section id="score-section">
                 <h3>your score is <span id="score">0</span></h3>
+            </section>
+            <section class="lives-section">
+                <div>You have <span id="number-of-lives">4</span> Lives Remaining!</div>
+                <div class="life-section">
+                    <span id="life1"><i class="fa fa-heart"></i></span>
+                    <span id="life2"><i class="fa fa-heart"></i></span>
+                    <span id="life3"><i class="fa fa-heart"></i></span>
+                    <span id="life4"><i class="fa fa-heart"></i></span>
+                </div>
             </section>
         </div>
     </div>
