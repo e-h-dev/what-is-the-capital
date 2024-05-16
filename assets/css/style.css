@@ -115,15 +115,6 @@ h1{
     padding: 15px;
 }
 
-.lives-section{
-    background-color: rgba(127, 255, 212, 0.4);
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 100px;
-    margin-left: 950px;
-    font-size: 28px;
-}
-
 .life-section{
     color:rgb(163, 5, 5);
     font-size:  32px;
@@ -148,21 +139,18 @@ h1{
     padding:30px;
 }
 
-/*--------styles for level-2 page -----------*/
-
-.score-section-level-2 h3{
-    font-size: 32px;
-    bottom:50px;
-    text-align: center;
-    font-weight: 300;
+.lives-section-level-1{
     background-color: rgba(127, 255, 212, 0.4);
+    padding: 10px;
+    width:450px;
+    text-align: center;
     border-radius: 15px;
-    width:400px;
-    margin-left: 150px;
-    margin-top: 80px;
-    padding:30px;
+    margin-top: -100px;
+    margin-left: 750px;
+    font-size: 28px;
 }
 
+/*--------styles for level-2 page -----------*/
 
 .game-area-level-2{
     width: 830px;
@@ -184,6 +172,29 @@ input{
 
 input:focus{
     outline: none;
+}
+
+.score-section-level-2 h3{
+    font-size: 32px;
+    bottom:50px;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgba(127, 255, 212, 0.4);
+    border-radius: 15px;
+    width:400px;
+    margin-left: 150px;
+    margin-top: 80px;
+    padding:30px;
+}
+
+
+.lives-section-level-2{
+    background-color: rgba(127, 255, 212, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 950px;
+    font-size: 28px;
 }
 
 
