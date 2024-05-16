@@ -55,8 +55,9 @@ button{
     background-color: rgb(4, 65, 65);
     color: rgb(153, 229, 243);
     height:50px;
-    font-family: "Caveat Brush";
-    font-size: 32px;
+    font-family: var(--main-text);
+    text-transform: capitalize;
+    font-size: 36px;
     outline:none;
 }
 
