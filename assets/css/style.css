@@ -30,7 +30,7 @@ body{
     position:relative;
     background-image: url("../images/map-background.jpg");
     box-sizing: content-box;
-    width: 85vw;
+    width: 85%;
     height: 75vh;
     max-height: 550px;
     max-width: 830px;
@@ -100,6 +100,14 @@ li{
     text-align: center;
     padding: 20px;
 
+}
+
+/*--------styles for level-2 page -----------*/
+
+.game-area-level-2{
+    width: 85%;
+    height: 35vh;
+    max-height: 450px;
 }
 
 
