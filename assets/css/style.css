@@ -111,6 +111,22 @@ li{
     max-height: 450px;
 }
 
+input{
+    height:50px;
+    width: 250px;
+    position: relative;
+    font-family: var(--main-text);
+    font-size: 36px;
+    background-color:#7fffd4;
+    border-radius: 5px;
+    border: none;
+    margin-left: 250px;
+}
+
+input:focus{
+    outline: none;
+}
+
 
 @media screen and (max-width:943px) {
 
