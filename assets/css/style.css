@@ -10,11 +10,13 @@
 /* -------- styles for all pages----*/
 body{
     color:rgb(4, 65, 65);
+    font-family: var(--main-text);
+}
+
+.hero{
     background-image: url("../images/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: var(--main-text);
-    
 }
 
 .opaque{
