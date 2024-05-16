@@ -104,6 +104,10 @@ li{
 
 }
 
+#game-type{
+    cursor: pointer;
+}
+
 h1{
     font-size: 56px;
     font-weight: 300;
