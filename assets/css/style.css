@@ -44,8 +44,6 @@ body{
     box-sizing: content-box;
     width: 100vw;
     height: 500px;
-    max-height: 550px;
-    max-width: 830px;
     border-radius: 15px;
 }
 
@@ -204,13 +202,12 @@ input:focus{
         position:relative;
         background-image: url("../images/map-background.jpg");
         box-sizing: content-box;
-        width: 85vw;
-        height: 75vh;
-        max-height: 550px;
-        max-width: 830px;
-        margin-left: auto;
-        margin-right: auto;
-        top:100px;
+        left: 55px;
+        top: 200px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 700px;
+        width: 700px;
         border-radius: 5px;
     }
     
@@ -219,10 +216,8 @@ input:focus{
         position: relative;
         z-index: 1;
         box-sizing: content-box;
-        width: 75%;
-        height: 80%;
-        max-height: 550px;
-        max-width: 830px;
+        width: 700px;
+        height: 700px;
     }
     
     button{
