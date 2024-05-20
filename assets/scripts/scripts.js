@@ -1,3 +1,11 @@
+/*this section at the head of the script is for 
+creating the neccaserry variables of arrays and
+DOM elements*/ 
+
+//------test lists
+let countries = ["england", "france", "germany", "japan", "ireland", "the USA", "the UAE", "brazil", "poland", "russia", "ukraine", "wales"];
+let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "dubai", "brasilia", "warsaw", "moscow", "kyev", "cardiff"];
+
 //-------function to print the first letter of word as capital to the DOM--------
 function capitalise(){
 
@@ -6,7 +14,7 @@ function capitalise(){
 function changeGame(){
 
 };
-//--------- game runnig function will run when page id loaded and when "next question" is clicked
+//--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
 
 };
