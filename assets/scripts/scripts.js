@@ -12,6 +12,7 @@ let question = document.getElementById("question");
 let answer = document.getElementById("answer-box");
 let sub = document.getElementById("submit");
 let next = document.getElementById("next");
+let message = document.getElementById("message");
 let numlen = countries.length;
 let arrayPosition = Math.floor(Math.random()*numlen);
 let chosenCountry = countries[arrayPosition];
@@ -48,11 +49,12 @@ next.addEventListener("click", playGame);
 
 // ------ function for correct answer ---------
 function correct(){
-    console.log("you got it right");
+    message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`
 }
 // ------ function for incorrect answer ---------
 function incorrect(){
-    console.log("that was wrong");
+    //message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${box}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
+    message.innerHTML = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
 }
 
 //------ checks value of answer if correct wrong or invalid --------
@@ -67,12 +69,14 @@ function answerCheck(checkAnswer){
 };
 sub.addEventListener("click", answerCheck);
 
+
+/* -------- creates message to display to user if answer correct or not--------
+function message(){
+
+};*/
+
 //---------removes one life for wrong answer ---------------------
 function lifeRemoval(){
-
-};
-// -------- creates message to display to user if answer correct or not--------
-function message(){
 
 };
 //-------- adds a point for correct answer subbtracts a point for incorrect answer
