@@ -41,8 +41,10 @@ console.log(chosenArrayItem(countries));
 
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
-
+    let chosenCountry = chosenArrayItem(countries)
+    question.innerHTML = `What is the Capital of ${chosenCountry}?`;
 };
+document.addEventListener("DOMContentLoaded", playGame);
 //------ checks value of answer if correct wrong or invalid --------
 function answerCheck(){
 
