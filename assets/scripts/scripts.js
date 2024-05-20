@@ -45,6 +45,7 @@ function playGame(){
     question.innerHTML = `What is the Capital of ${chosenCountry}?`;
 };
 document.addEventListener("DOMContentLoaded", playGame);
+next.addEventListener("click", playGame);
 //------ checks value of answer if correct wrong or invalid --------
 function answerCheck(){
 
