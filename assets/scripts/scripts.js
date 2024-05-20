@@ -41,11 +41,23 @@ change.addEventListener("click", changeGame);
 
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
-    //let chosenCountry = chosenArrayItem(countries);
     question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
+    // -------------- blank input box for next question ----------
+    answer.value = "";
+    // -----------------focus on input box---------------------
+    answer.focus();
+    // --------------------clear message from previous answer ----
+    message.innerHTML = "";
 };
 document.addEventListener("DOMContentLoaded", playGame);
-next.addEventListener("click", playGame);
+next.addEventListener("click", runGame);
+
+// --------function to run the logic of the game -----
+function runGame(){
+    answerCheck();
+    sub.innerHTML = "";       
+    next.innerHTML = `<button>Next Question</button>`;
+}
 
 // ------ function for correct answer ---------
 function correct(){
@@ -67,9 +79,15 @@ function answerCheck(checkAnswer){
         correct();
     }else{
         incorrect();
-    }
+    };
 };
-sub.addEventListener("click", answerCheck);
+sub.addEventListener("click", runGame);
+
+// --------- load the next question to the DOM ------
+function nextQuestion(){
+    sub.innerHTML = "";
+    next.innerHTML = `<button>Next Question</button>`;
+}
 
 // ---------variables for the lives section ----------------------
 let life1 = document.getElementById("life1");
