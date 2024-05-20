@@ -5,7 +5,9 @@ DOM elements*/
 //------test lists
 let countries = ["england", "france", "germany", "japan", "ireland", "the USA", "the UAE", "brazil", "poland", "russia", "ukraine", "wales"];
 let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "dubai", "brasilia", "warsaw", "moscow", "kyev", "cardiff"];
+let countries1 = [["england","london"], ["france", "paris"], ["germany", "berlin"], ["japan", "tokyo"], ["ireland", "dublin"], ["the USA", "washington"], ["the UAE", "dubai"], ["brazil", "brasilia"], ["poland", "warsaw"], ["russia", "moscow"], ["ukraine", "kyev"], ["wales", "cardiff"]];
 
+console.log(countries1[2][1]);
 // -------- DOM element variables-----
 let change = document.getElementById("game-type");
 let question = document.getElementById("question");
