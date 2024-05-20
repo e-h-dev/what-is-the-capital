@@ -6,14 +6,30 @@ DOM elements*/
 let countries = ["england", "france", "germany", "japan", "ireland", "the USA", "the UAE", "brazil", "poland", "russia", "ukraine", "wales"];
 let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "dubai", "brasilia", "warsaw", "moscow", "kyev", "cardiff"];
 
-//-------function to print the first letter of word as capital to the DOM--------
-function capitalise(){
+// -------- DOM element variables-----
+let question = document.getElementById("question");
+let answer = document.getElementById("answer-box");
+let sub = document.getElementById("submit");
+let next = document.getElementById("next");
 
+//-------function to print the first letter of word as capital to the DOM--------
+function capitalise(word){
+    let firstLetter = word.charAt(0);
+    let firstToCap = firstLetter.toUpperCase();
+    let remainingLetters = word.slice(1);
+    let finalWord = firstToCap + remainingLetters;
+    return finalWord;
 };
 //--------changes game type to ask which country is this capital from-------
 function changeGame(){
 
 };
+
+// -------- create variables of random Country and it's Capital ---------
+function chosenCountry(){
+
+};
+
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
 
