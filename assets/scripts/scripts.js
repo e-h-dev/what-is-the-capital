@@ -48,9 +48,10 @@ function playGame(){
     answer.focus();
     // --------------------clear message from previous answer ----
     message.innerHTML = "";
+    sub.addEventListener("click", runGame);
 };
 document.addEventListener("DOMContentLoaded", playGame);
-next.addEventListener("click", runGame);
+next.addEventListener("click", playGame);
 
 // --------function to run the logic of the game -----
 function runGame(){
@@ -81,7 +82,6 @@ function answerCheck(checkAnswer){
         incorrect();
     };
 };
-sub.addEventListener("click", runGame);
 
 // --------- load the next question to the DOM ------
 function nextQuestion(){
