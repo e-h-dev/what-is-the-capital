@@ -31,9 +31,13 @@ function changeGame(){
 change.addEventListener("click", changeGame);
 
 // -------- create variables of random Country and it's Capital ---------
-function chosenCountry(){
-
+function chosenArrayItem(randomChoice){
+    let numlen = countries.length;
+    let arrayPosition = Math.floor(Math.random()*numlen);
+    return randomChoice[arrayPosition];
 };
+
+console.log(chosenArrayItem(countries));
 
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
