@@ -56,6 +56,7 @@ function correct(){
 function incorrect(){
     message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${answer.value}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
     subtractScore();
+    lifeRemoval();
 }
 
 //------ checks value of answer if correct wrong or invalid --------
@@ -70,9 +71,27 @@ function answerCheck(checkAnswer){
 };
 sub.addEventListener("click", answerCheck);
 
+// ---------variables for the lives section ----------------------
+let life1 = document.getElementById("life1");
+let life2 = document.getElementById("life2");
+let life3 = document.getElementById("life3");
+let life4 = document.getElementById("life4");
+
+let listOfLives = [life1, life2, life3, life4];
+let lifeNumber = 4;
+let currentLife = listOfLives[lifeNumber];
+
+//--------- function to take life symbl off DOM -----------------
+function removeLife(last){
+    last.innerHTML ="";
+}
+
 //---------removes one life for wrong answer ---------------------
 function lifeRemoval(){
-
+    lifeNumber = lifeNumber -1;
+    removeLife(listOfLives[lifeNumber]);
+    let remainingLives = document.getElementById("number-of-lives");
+    remainingLives.innerHTML = lifeNumber;
 };
 //-------- adds a point for correct answer --------------------------------
 function incrementScore(){
