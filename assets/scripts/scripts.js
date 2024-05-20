@@ -53,8 +53,7 @@ function correct(){
 }
 // ------ function for incorrect answer ---------
 function incorrect(){
-    //message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${box}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
-    message.innerHTML = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
+    message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${answer.value}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
 }
 
 //------ checks value of answer if correct wrong or invalid --------
