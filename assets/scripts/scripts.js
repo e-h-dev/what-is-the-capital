@@ -12,6 +12,13 @@ let question = document.getElementById("question");
 let answer = document.getElementById("answer-box");
 let sub = document.getElementById("submit");
 let next = document.getElementById("next");
+let numlen = countries.length;
+let arrayPosition = Math.floor(Math.random()*numlen);
+let chosenCountry = countries[arrayPosition];
+let chosenCapital = capitals[arrayPosition];
+
+console.log(chosenCountry);
+console.log(chosenCapital);
 
 //-------function to print the first letter of word as capital to the DOM--------
 function capitalise(word){
@@ -30,26 +37,36 @@ function changeGame(){
 
 change.addEventListener("click", changeGame);
 
-// -------- create variables of random Country and it's Capital ---------
-function chosenArrayItem(randomChoice){
-    let numlen = countries.length;
-    let arrayPosition = Math.floor(Math.random()*numlen);
-    return randomChoice[arrayPosition];
-};
-
-console.log(chosenArrayItem(countries));
 
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
-    let chosenCountry = chosenArrayItem(countries)
-    question.innerHTML = `What is the Capital of ${chosenCountry}?`;
+    //let chosenCountry = chosenArrayItem(countries);
+    question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
 };
 document.addEventListener("DOMContentLoaded", playGame);
 next.addEventListener("click", playGame);
-//------ checks value of answer if correct wrong or invalid --------
-function answerCheck(){
 
+// ------ function for correct answer ---------
+function correct(){
+    console.log("you got it right");
+}
+// ------ function for incorrect answer ---------
+function incorrect(){
+    console.log("that was wrong");
+}
+
+//------ checks value of answer if correct wrong or invalid --------
+function answerCheck(checkAnswer){
+    checkAnswer = answer.value;
+    console.log(checkAnswer);
+    if (checkAnswer === chosenCapital){
+        correct();
+    }else{
+        incorrect();
+    }
 };
+sub.addEventListener("click", answerCheck);
+
 //---------removes one life for wrong answer ---------------------
 function lifeRemoval(){
 
