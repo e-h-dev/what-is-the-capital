@@ -49,11 +49,13 @@ next.addEventListener("click", playGame);
 
 // ------ function for correct answer ---------
 function correct(){
-    message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`
+    message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`;
+    incrementScore();
 }
 // ------ function for incorrect answer ---------
 function incorrect(){
     message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${answer.value}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
+    subtractScore();
 }
 
 //------ checks value of answer if correct wrong or invalid --------
@@ -68,19 +70,20 @@ function answerCheck(checkAnswer){
 };
 sub.addEventListener("click", answerCheck);
 
-
-/* -------- creates message to display to user if answer correct or not--------
-function message(){
-
-};*/
-
 //---------removes one life for wrong answer ---------------------
 function lifeRemoval(){
 
 };
-//-------- adds a point for correct answer subbtracts a point for incorrect answer
+//-------- adds a point for correct answer --------------------------------
 function incrementScore(){
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById("score").innerHTML = ++oldScore;
+};
 
+//-------- subtracts a point for incorrect answer
+function subtractScore(){
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById("score").innerHTML = --oldScore;
 };
 // ------displays game over message when no more questions or no remaining lives -----
 function gameOver(){
