@@ -31,3 +31,24 @@ function randomise(myList){
     [myList[size], myList[randPosition]] = [myList[randPosition], myList[size]];
     };
 };
+
+function myMessage(message){
+    return message;
+}
+
+function show(myClick){
+    document.getElementById(myClick).style.backgroundColor = "red";
+    setTimeout(delayMessage, 1000);
+    function delayMessage(){
+        document.getElementById("incorrect-choice").innerHTML = wrongMessage;
+        };
+    };
+
+function answer(myClick){
+    document.getElementById(myClick).style.backgroundColor = "green";
+    setTimeout(delayMessage, 1000);
+    function delayMessage(){
+        
+        document.getElementById("incorrect-choice").innerHTML = correctMessage;
+         };
+    };
