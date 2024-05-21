@@ -109,4 +109,9 @@ function runGame(){
     console.log(shortList1);
     console.log(shortList2);
     console.log(shortList3);
+//--------map element to loop through each list and recreate the inner html
+    const result2 = shortList1.map(function(cap){return `<div class="incorrect" id="result2" onclick="show('result2')">${cap}</div>`});
+    const result3 = shortList2.map(function(cap){return `<div class="incorrect" id="result3" onclick="show('result3')">${cap}</div>`});
+    const result4 = shortList3.map(function(cap){return `<div class="incorrect" id="result4" onclick="show('result4')">${cap}</div>`});
 };
+
