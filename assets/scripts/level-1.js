@@ -52,3 +52,22 @@ function answer(myClick){
         document.getElementById("incorrect-choice").innerHTML = correctMessage;
          };
     };
+
+function runGame(){
+    
+    let arrayPosition = Math.floor(Math.random() *countries.length);
+    console.log(countries.length);
+    
+    console.log(countries);
+    console.log(capitals);
+    
+    // ------- variables for random countries and capitals
+    
+    let chosenCountry = countries[arrayPosition];
+    let chosenCapital = capitals[arrayPosition];
+    
+    wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`
+    correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`
+    question.innerHTML =  `What is the capital of ${chosenCountry}? `;
+};
+    
