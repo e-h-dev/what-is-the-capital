@@ -92,6 +92,12 @@ function runGame(){
 next.addEventListener("click", playGame);
 // ------ function for correct answer ---------
 
+
+// -------function to invalidate whitespace  see stackoverflow https://stackoverflow.com/questions/1731190/check-if-a-string-has-white-space
+function hasWhiteSpace(s) {
+    return /\s/g.test(s);
+  }
+
 //------ checks value of answer if correct wrong or invalid --------
 function answerCheck(checkAnswer){
     checkAnswer = answer.value;
@@ -99,6 +105,8 @@ function answerCheck(checkAnswer){
     if (checkAnswer === chosenCapital){
         correct();
     }else if(checkAnswer === ""){
+        invalid();
+    }else if(hasWhiteSpace(checkAnswer)){
         invalid();
     }else if(checkAnswer !== chosenCapital){
         incorrect();
