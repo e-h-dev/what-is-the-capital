@@ -156,9 +156,17 @@ function subtractScore(){
     };
     
 };
+
+// ------displays game over message when no more questions or no remaining lives -----
 function gameOver(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     question.innerHTML = "Game over!";
     playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
 };
-// ------displays game over message when no more questions or no remaining lives -----
+
+$(document).ready(function(){
+    $("#theme").click(function(){
+      $("div").css("background-color", "rgba(255, 170, 51, 0.5)");
+      $("div").css("color", "red");
+    });
+  });
