@@ -132,6 +132,7 @@ h1{
 .game-area-level-1{
     width: 830px;
     height: 320px;
+    top:0;
 }
 
 .game-area-background-level-1{
@@ -143,11 +144,11 @@ h1{
     font-family: "Caveat Brush";
     font-size: 32px;
     position: absolute;
-    top: 150px;
+    top: 85px;
     z-index: 2;
 }
 
-#incorrect-choice, .incorrect{
+.incorrect{
     background-color: rgba(0, 180, 235, 0.8);
     width:220px;
     margin:10px;
@@ -155,6 +156,10 @@ h1{
     position: relative;
     left: 300px;
     border-radius: 5px;
+}
+
+#next{
+    margin-top: 160px;
 }
 
 .score-section-level-1 h3{
@@ -230,9 +235,10 @@ input:focus{
 #correct-message-box, #incorrect-message-box{
     text-align: center;
     font-family:var(--main-text);
+    font-size: 28px;
     padding:25px;
     height: 30px;
-    width:630px;
+    width:800px;
     border-radius: 10px;
 }
 
