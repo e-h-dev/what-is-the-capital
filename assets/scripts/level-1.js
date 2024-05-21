@@ -120,4 +120,15 @@ function runGame(){
     let result2_2 = result2[Math.floor(Math.random() *listlen)];
     let result3_3 = result3[Math.floor(Math.random() *listlen)];
     let result4_4 = result4[Math.floor(Math.random() *listlen)];
+
+    let listx = [result1_1, result2_2, result3_3, result4_4];
+
+    randomise(listx);
+
+    console.log(listx.join(""));
+    divSpace.innerHTML = listx.join("");
 };
+
+
+
+
