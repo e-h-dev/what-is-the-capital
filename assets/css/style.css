@@ -224,10 +224,13 @@ input:focus{
 
 .lives-section-level-2{
     background-color: rgba(127, 255, 212, 0.4);
+    text-align: center;
     padding: 20px;
+    position: relative;
     border-radius: 15px;
     margin-top: 50px;
-    margin-left: 950px;
+    left: 950px;
+    width:350px;
     font-size: 28px;
 }
 
