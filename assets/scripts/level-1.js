@@ -81,4 +81,32 @@ function runGame(){
     console.log(usedQuestion);
     console.log(countries);
     console.log(capitals);
+    //------------- create shorter lists for the wrong answer options(will not have double of the same option)
+   
+    let shortList1 = capitals.slice(0,4);
+    let shortList2 = capitals.slice(4,8);
+    let shortList3 = capitals.slice(8,12);
+    //-------------------create random number for short list item
+
+    let wrongCap1 = shortList1[Math.floor(Math.random() *shortList1.length)];
+    let wrongCap2 = shortList2[Math.floor(Math.random() *shortList2.length)];
+    let wrongCap3 = shortList3[Math.floor(Math.random() *shortList3.length)];
+
+    let list = [wrongCap1, wrongCap2, wrongCap3];
+
+    console.log(list);
+
+    let listlen = list.length;
+
+    let newArrayPosition = Math.floor(Math.random() *spareList.length)
+
+    capitals.push(spareList[newArrayPosition]);
+    
+    spareList.splice(newArrayPosition, 1);
+
+    console.log(spareList);
+
+    console.log(shortList1);
+    console.log(shortList2);
+    console.log(shortList3);
 };
