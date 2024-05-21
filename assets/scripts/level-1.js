@@ -5,16 +5,21 @@ let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "d
 let spareList = ["melbourne", "lakewood", "bangor", "dublin", "york", "newcastle", "windermere", "dresden", "Manchester", "Tel Aviv", "Boston", "Cairo"]
 console.log(spareList);
 
+// ------------------- DOM element variables-----------
 let next = document.getElementById("next");
-  //-------creating relavant number  
 let numlen = countries.length;
-
-//----------initial question
 let question = document.getElementById("question");
-
 let divSpace = document.getElementById("incorrect-choice");
+let message = document.getElementById("multiple-choice");
 
-message = document.getElementById("multiple-choice");
+// ---------variables for the lives section ----------------------
+let life1 = document.getElementById("life1");
+let life2 = document.getElementById("life2");
+let life3 = document.getElementById("life3");
+let life4 = document.getElementById("life4");
+
+let listOfLives = [life1, life2, life3, life4];
+let lifeNumber = 4;
 
 //fisher and yates shuffle (stack overflow) https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
@@ -133,6 +138,22 @@ document.addEventListener("DOMContentLoaded", runGame);
 //---------next question button -----
 
 next.addEventListener("click", runGame);
+
+//--------- function to take life symbol off DOM -----------------
+function removeLife(last){
+    last.innerHTML ="";
+}
+
+//---------removes one life for wrong answer ---------------------
+function lifeRemoval(){
+    lifeNumber = lifeNumber -1;
+    removeLife(listOfLives[lifeNumber]);
+    let remainingLives = document.getElementById("number-of-lives");
+    remainingLives.innerHTML = lifeNumber;
+    if (lifeNumber == 0){
+        gameOver();
+    };
+};
 
 
 
