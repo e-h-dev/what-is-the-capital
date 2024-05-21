@@ -5,12 +5,16 @@ let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "d
 let spareList = ["melbourne", "lakewood", "bangor", "dublin", "york", "newcastle", "windermere", "dresden", "Manchester", "Tel Aviv", "Boston", "Cairo"]
 console.log(spareList);
 
-// ------------------- DOM element variables-----------
 let next = document.getElementById("next");
+  //-------creating relavant number  
 let numlen = countries.length;
+
+//----------initial question
 let question = document.getElementById("question");
+
 let divSpace = document.getElementById("incorrect-choice");
-let message = document.getElementById("multiple-choice");
+
+message = document.getElementById("multiple-choice");
 
 // ---------variables for the lives section ----------------------
 let life1 = document.getElementById("life1");
@@ -37,9 +41,44 @@ function randomise(myList){
     };
 };
 
-function myMessage(message){
-    return message;
+//-------- adds a point for correct answer --------------------------------
+function incrementScore(){
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById("score").innerHTML = ++oldScore;
+};
+
+//-------- subtracts a point for incorrect answer
+function subtractScore(){
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    if (oldScore >0){
+        document.getElementById("score").innerHTML = --oldScore;
+    }else{
+        document.getElementById('score').innerText = oldScore;
+    };
+    
+};
+
+//--------- function to take life symbol off DOM -----------------
+function removeLife(last){
+    last.innerHTML ="";
 }
+
+//---------removes one life for wrong answer ---------------------
+function lifeRemoval(){
+    lifeNumber = lifeNumber -1;
+    removeLife(listOfLives[lifeNumber]);
+    let remainingLives = document.getElementById("number-of-lives");
+    remainingLives.innerHTML = lifeNumber;
+    if (lifeNumber == 0){
+        gameOver();
+    };
+};
+
+function gameOver(){
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    question.innerHTML = "Game over!";
+    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
+};
 
 function show(myClick){
     document.getElementById(myClick).style.backgroundColor = "red";
@@ -47,15 +86,17 @@ function show(myClick){
     function delayMessage(){
         document.getElementById("incorrect-choice").innerHTML = wrongMessage;
         };
+        lifeRemoval();
+        subtractScore();
     };
 
 function answer(myClick){
     document.getElementById(myClick).style.backgroundColor = "green";
     setTimeout(delayMessage, 1000);
     function delayMessage(){
-        
         document.getElementById("incorrect-choice").innerHTML = correctMessage;
          };
+         incrementScore();
     };
 
 function runGame(){
@@ -138,22 +179,6 @@ document.addEventListener("DOMContentLoaded", runGame);
 //---------next question button -----
 
 next.addEventListener("click", runGame);
-
-//--------- function to take life symbol off DOM -----------------
-function removeLife(last){
-    last.innerHTML ="";
-}
-
-//---------removes one life for wrong answer ---------------------
-function lifeRemoval(){
-    lifeNumber = lifeNumber -1;
-    removeLife(listOfLives[lifeNumber]);
-    let remainingLives = document.getElementById("number-of-lives");
-    remainingLives.innerHTML = lifeNumber;
-    if (lifeNumber == 0){
-        gameOver();
-    };
-};
 
 
 
