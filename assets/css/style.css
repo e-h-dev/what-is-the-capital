@@ -303,7 +303,9 @@ input:focus{
 @media screen and (max-width:943px) {
 
     /* -------- styles for all pages----*/
-    
+    .body{
+        color: red;
+    }
     .game-area{
         position:relative;
         background-image: url("../images/map-background.jpg");
@@ -346,5 +348,32 @@ input:focus{
         border-radius: 5px;
         margin:50px;
         cursor:pointer;
+    }
+}
+
+/*media query for mobile*/
+@media screen and (max-width:600px){
+    .body{
+        background-color: red;
+    }
+    
+    .game-area{
+        position:relative;
+        background-image: url("../images/map-background.jpg");
+        box-sizing: content-box;
+        left: 200px;
+        top: 100px;
+        height: 600px;
+        width: 830px;
+        border-radius: 5px;
+    }
+    
+    .game-area-background{
+        background-color: rgba(127, 255, 212, 0.7);
+        position: relative;
+        z-index: 1;
+        box-sizing: content-box;
+        width: 830px;
+        height: 600px;
     }
 }
