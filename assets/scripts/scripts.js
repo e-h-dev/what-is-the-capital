@@ -5,9 +5,7 @@ DOM elements*/
 //------test lists
 let countries = ["england", "france", "germany", "japan", "ireland", "the USA", "the UAE", "brazil", "poland", "russia", "ukraine", "wales"];
 let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "dubai", "brasilia", "warsaw", "moscow", "kyev", "cardiff"];
-let countries1 = [["england","london"], ["france", "paris"], ["germany", "berlin"], ["japan", "tokyo"], ["ireland", "dublin"], ["the USA", "washington"], ["the UAE", "dubai"], ["brazil", "brasilia"], ["poland", "warsaw"], ["russia", "moscow"], ["ukraine", "kyev"], ["wales", "cardiff"]];
 
-console.log(countries1[2][1]);
 // -------- DOM element variables-----
 let change = document.getElementById("game-type");
 let question = document.getElementById("question");
@@ -15,13 +13,8 @@ let answer = document.getElementById("answer-box");
 let sub = document.getElementById("submit");
 let next = document.getElementById("next");
 let message = document.getElementById("message");
-let numlen = countries.length;
-let arrayPosition = Math.floor(Math.random()*numlen);
-let chosenCountry = countries[arrayPosition];
-let chosenCapital = capitals[arrayPosition];
 
-console.log(chosenCountry);
-console.log(chosenCapital);
+
 
 //-------function to print the first letter of word as capital to the DOM--------
 function capitalise(word){
@@ -31,7 +24,7 @@ function capitalise(word){
     let finalWord = firstToCap + remainingLetters;
     return finalWord;
 };
-console.log("hello")
+
 //--------changes game type to ask which country is this capital from-------
 
 function changeGame(){
@@ -43,17 +36,26 @@ change.addEventListener("click", changeGame);
 
 //--------- game running function will run when page id loaded and when "next question" is clicked
 function playGame(){
-    question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
     // -------------- blank input box for next question ----------
     answer.value = "";
     // -----------------focus on input box---------------------
     answer.focus();
     // --------------------clear message from previous answer ----
     message.innerHTML = "";
+
+    sub.innerHTML = `<button>Submit</button>`;
+    next.innerHTML = "";
+
+    let numlen = countries.length;
+    let arrayPosition = Math.floor(Math.random()*numlen);
+    chosenCountry = countries[arrayPosition];
+    chosenCapital = capitals[arrayPosition];
+
+    question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
+
     sub.addEventListener("click", runGame);
 };
 document.addEventListener("DOMContentLoaded", playGame);
-next.addEventListener("click", playGame);
 
 // --------function to run the logic of the game -----
 function runGame(){
@@ -62,6 +64,7 @@ function runGame(){
     next.innerHTML = `<button>Next Question</button>`;
 }
 
+next.addEventListener("click", playGame);
 // ------ function for correct answer ---------
 function correct(){
     message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`;
