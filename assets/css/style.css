@@ -76,6 +76,10 @@ button{
 
 /*----------------styles for home page --------------------------------*/
 
+.start-hidden{
+    display: none;
+}
+
 .play-buttons{
     padding:50px;
 }
@@ -303,9 +307,6 @@ input:focus{
 @media screen and (max-width:943px) {
 
     /* -------- styles for all pages----*/
-    .body{
-        color: red;
-    }
     .game-area{
         position:relative;
         background-image: url("../images/map-background.jpg");
@@ -363,7 +364,7 @@ input:focus{
         box-sizing: content-box;
         left: 200px;
         top: 100px;
-        height: 600px;
+        height: 300px;
         width: 830px;
         border-radius: 5px;
     }
