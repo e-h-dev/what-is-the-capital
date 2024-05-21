@@ -69,5 +69,16 @@ function runGame(){
     wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`
     correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`
     question.innerHTML =  `What is the capital of ${chosenCountry}? `;
-};
+
+    //--------------------- remove chosenCapital --------------------
     
+    let remove = arrayPosition;
+    console.log(remove);
+   
+    let usedQuestion = countries.splice(remove,1)
+    let usedAnswer = capitals.splice(remove,1);
+    console.log(usedAnswer);
+    console.log(usedQuestion);
+    console.log(countries);
+    console.log(capitals);
+};
