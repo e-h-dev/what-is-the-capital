@@ -63,6 +63,18 @@ function playGame(){
 
     question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
 
+    let usedQuestion = countries.splice(arrayPosition,1);
+    console.log(usedQuestion);
+
+    let usedAnswer = capitals.splice(arrayPosition,1);
+    console.log(usedAnswer);
+
+    console.log(countries);
+    console.log(countries.length);
+    if(countries.length == 0){
+        gameOver();
+    }
+
     sub.addEventListener("click", runGame);
 };
 document.addEventListener("DOMContentLoaded", playGame);
@@ -83,9 +95,9 @@ function answerCheck(checkAnswer){
     console.log(checkAnswer);
     if (checkAnswer === chosenCapital){
         correct();
-    }else if(checkAnswer = " "){
+    }else if(checkAnswer === ""){
         invalid();
-    }else{
+    }else if(checkAnswer !== chosenCapital){
         incorrect();
     };
 };
@@ -147,6 +159,6 @@ function subtractScore(){
 function gameOver(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     question.innerHTML = "Game over!";
-    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3>`;
+    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
 };
 // ------displays game over message when no more questions or no remaining lives -----
