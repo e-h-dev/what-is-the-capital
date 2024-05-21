@@ -15,3 +15,19 @@ let question = document.getElementById("question");
 let divSpace = document.getElementById("incorrect-choice");
 
 message = document.getElementById("multiple-choice");
+
+//fisher and yates shuffle (stack overflow) https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+function randomise(myList){
+    let size = myList.length;
+    while(size != 0){
+    let randPosition = Math.floor(Math.random() * size);
+    size--;
+
+    console.log(size);
+
+    console.log(randPosition);
+
+    [myList[size], myList[randPosition]] = [myList[randPosition], myList[size]];
+    };
+};
