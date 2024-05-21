@@ -128,6 +128,11 @@ function runGame(){
     console.log(listx.join(""));
     divSpace.innerHTML = listx.join("");
 };
+document.addEventListener("DOMContentLoaded", runGame);
+
+//---------next question button -----
+
+next.addEventListener("click", runGame);
 
 
 
