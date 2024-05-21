@@ -113,5 +113,11 @@ function runGame(){
     const result2 = shortList1.map(function(cap){return `<div class="incorrect" id="result2" onclick="show('result2')">${cap}</div>`});
     const result3 = shortList2.map(function(cap){return `<div class="incorrect" id="result3" onclick="show('result3')">${cap}</div>`});
     const result4 = shortList3.map(function(cap){return `<div class="incorrect" id="result4" onclick="show('result4')">${cap}</div>`});
-};
 
+    //---------- creates the answer box for correct answer
+    let correctResult = `<div class="incorrect" id="result1" onclick="answer('result1')">${chosenCapital}</div>`
+    let result1_1 = correctResult;
+    let result2_2 = result2[Math.floor(Math.random() *listlen)];
+    let result3_3 = result3[Math.floor(Math.random() *listlen)];
+    let result4_4 = result4[Math.floor(Math.random() *listlen)];
+};
