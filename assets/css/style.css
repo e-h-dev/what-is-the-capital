@@ -16,6 +16,16 @@ body{
     font-family: var(--main-text);
 }
 
+a{
+   color:var(--dark-color); 
+}
+
+li:hover{
+    font-size: 48px;
+    background-color: green;
+    cursor: pointer;
+}
+
 /*------main background image of world flags -----*/
 .hero{
     background-image: url("../images/hero-image.jpg");
