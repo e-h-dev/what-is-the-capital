@@ -37,11 +37,10 @@ body{
     position:relative;
     background-image: url("../images/map-background.jpg");
     box-sizing: content-box;
-    width: 830px;
-    height: 500px;
-    top: 50px;
-    left: 250px;
     border-radius: 15px;
+    left:280px;
+    width:850px;
+    top:20px;
 }
 
 /* ---------opaque color over play area image---------*/
@@ -130,6 +129,33 @@ h1{
 }
 
 /*--------styles for level-1 page -----------*/
+.game-area-level-1{
+    width: 830px;
+    height: 320px;
+}
+
+.game-area-background-level-1{
+    height:320px;
+}
+
+#multiple-choice{
+    text-align: center;
+    font-family: "Caveat Brush";
+    font-size: 32px;
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
+#incorrect-choice, .incorrect{
+    background-color: rgba(0, 180, 235, 0.8);
+    width:220px;
+    margin:10px;
+    cursor: pointer;
+    position: relative;
+    left: 300px;
+    border-radius: 5px;
+}
 
 .score-section-level-1 h3{
     font-size: 32px;
