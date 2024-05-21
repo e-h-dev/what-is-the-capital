@@ -24,7 +24,10 @@ let life4 = document.getElementById("life4");
 let listOfLives = [life1, life2, life3, life4];
 let lifeNumber = 4;
 
-
+// --------- function for theme dropown menu ----------
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
 //-------function to print the first letter of word as capital to the DOM--------
 function capitalise(word){
