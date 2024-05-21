@@ -177,7 +177,17 @@ function gameOver(){
 
 $(document).ready(function(){
     $("#theme").click(function(){
-      $("div").css("background-color", "rgba(255, 170, 51, 0.5)");
-      $("div").css("color", "red");
+      $("body").css("color", "red");
+      $(".opaque").css("background-color", "rgba(255, 170, 51, 0.5)");
+      $("ul").css("background-color", "rgba(255, 170, 51, 0.5)");
+      $(".game-area-background").css("background-color", "rgba(255, 170, 51, 0.5)");
+      //$("div").css("color", "red");
+      $("button").css("background-color", "rgb(255, 170, 52)");
+      $("button").css("color", "red");
+      $("input").css("background-color", "rgb(255, 170, 52)");
+      $("input").css("color", "red");
+      $("h1").css("color", "red");
+      $("h3").css("background-color", "rgba(255, 170, 52, 0.7)");
+      $(".lives-section-level-2").css("background-color", "rgba(255, 170, 52, 0.7)");
     });
   });
