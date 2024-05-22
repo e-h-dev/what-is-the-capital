@@ -76,6 +76,10 @@ button{
 }
 
 /*----------------styles for home page --------------------------------*/
+.start-hidden{
+    display: none;
+}
+
 .game-area-index, .game-area-background-index{
     height:570px;
 }
@@ -272,6 +276,7 @@ input:focus{
     border-radius: 15px;
     margin-top: 50px;
     left: 950px;
+    top:50px;
     width:350px;
     font-size: 28px;
 }
