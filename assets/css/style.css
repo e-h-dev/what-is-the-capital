@@ -98,6 +98,11 @@ button{
     padding-top: 15px;
 }
 
+.nav-button:hover{
+    height:70px;
+    width:700px;
+}
+
 #flip{
     margin-bottom: 0;
 }
@@ -340,7 +345,7 @@ input:focus{
         margin-right: 0px;
         height: 700px;
         width: 700px;
-        border-radius: 5px;
+        border-radius: 15px;
     }
     
     .game-area-background{
@@ -365,13 +370,23 @@ input:focus{
     }
     
     .nav-button{
-        height:120px;
+        height:100px;
         width:550px;
         border:outset 2px #000;
         box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
         border-radius: 5px;
         margin:50px;
         cursor:pointer;
+    }
+
+    .nav-button:hover{
+        background-color: var(--opaque-color);
+        width:550px;
+    }
+
+    .instructions{
+        width:550px;
+        margin-left: 50px;
     }
 
     /*--------styles for level 1 page----------*/
