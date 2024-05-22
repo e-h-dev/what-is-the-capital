@@ -244,6 +244,7 @@ h1{
 input{
     height:50px;
     width: 250px;
+    text-transform: capitalize;
     position: relative;
     font-family: var(--main-text);
     font-size: 36px;
@@ -624,7 +625,7 @@ input:focus{
         margin-left: 30px;
     }
 
-    #next button{
+    #next-level-2 button{
         top:-500px;
     }
 }
