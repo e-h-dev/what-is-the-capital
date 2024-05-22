@@ -23,7 +23,7 @@ a{
 
 li:hover{
     font-size: 48px;
-    background-color: green;
+    color: rgb(10, 99, 69);
     cursor: pointer;
 }
 
