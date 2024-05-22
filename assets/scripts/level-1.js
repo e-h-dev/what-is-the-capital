@@ -180,19 +180,23 @@ document.addEventListener("DOMContentLoaded", runGame);
 
 next.addEventListener("click", runGame);
 
+//--------------Jquery code for colour scheme change----------
 $(document).ready(function(){
     $("#theme").click(function(){
-      $("body").css("color", "red");
+      $("body").css("color", "rgb(220, 26, 6)");
       $(".opaque").css("background-color", "rgba(255, 170, 51, 0.5)");
       $("ul").css("background-color", "rgba(255, 170, 51, 0.5)");
       $(".game-area-background").css("background-color", "rgba(255, 170, 51, 0.5)");
-      //$("div").css("color", "red");
-      $("button").css({"background-color": "rgb(255, 170, 52)", "color": "red"});
-      $("input").css({"background-color": "rgb(255, 170, 52)", "color": "red"});
-      $("h1").css("color", "red");
+      $("button").css("background-color", "rgb(255, 170, 52)");
+      $("button").css("color", "rgb(220, 26, 6)");
+      $("input").css("background-color", "rgb(255, 170, 52)");
+      $("input").css("color", "rgb(220, 26, 6)");
+      $("li").css("color", "rgb(220, 26, 6)");
+      $("h1").css("color", "rgb(220, 26, 6)");
       $("h3").css("background-color", "rgba(255, 170, 52, 0.7)");
-      $(".lives-section-level-2").css("background-color", "rgba(255, 170, 52, 0.7)");
-      $("#theme").html("Theme 1");
+      $(".incorrect").css("background-color", "rgba(255, 170, 52, 0.7)");
+      $(".lives-section-level-1").css("background-color", "rgba(255, 170, 52, 0.7)");
+      $("#theme").html('');
     });
   });
 

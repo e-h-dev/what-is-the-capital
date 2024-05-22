@@ -185,6 +185,6 @@ $(document).ready(function(){
       $("h1").css("color", "rgb(220, 26, 6)");
       $("h3").css("background-color", "rgba(255, 170, 52, 0.7)");
       $(".lives-section-level-2").css("background-color", "rgba(255, 170, 52, 0.7)");
-      $("#theme").html('Theme 2');
+      $("#theme").html('');
     });
   });
