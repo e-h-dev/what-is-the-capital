@@ -468,27 +468,22 @@ input:focus{
 
 /*media query for mobile*/
 @media screen and (max-width:600px){
-    .body{
-        background-color: red;
-    }
     
-    .game-area{
-        position:relative;
+
+    .game-area-index{
         background-image: url("../images/map-background.jpg");
-        box-sizing: content-box;
-        left: 200px;
-        top: 100px;
-        height: 300px;
-        width: 830px;
-        border-radius: 5px;
+        left: 10px;
+        width: 200px;
+        border-radius: 15px;
     }
-    
-    .game-area-background{
-        background-color: rgba(127, 255, 212, 0.7);
-        position: relative;
-        z-index: 1;
-        box-sizing: content-box;
-        width: 830px;
+
+    .game-area-background-index{
+        width: 400px;
         height: 600px;
+    }
+
+    .nav-button{
+        height:80px;
+        width:300px;
     }
 }
