@@ -21,15 +21,11 @@ let life2 = document.getElementById("life2");
 let life3 = document.getElementById("life3");
 let life4 = document.getElementById("life4");
 
+//------------list to display and remove lives-----------------
 let listOfLives = [life1, life2, life3, life4];
 let lifeNumber = 4;
 
-// --------- function for theme dropown menu ----------
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-//-------function to print the first letter of word as capital to the DOM--------
+//-------function to capitalise words on the DOM--------
 function capitalise(word){
     let firstLetter = word.charAt(0);
     let firstToCap = firstLetter.toUpperCase();
@@ -38,16 +34,7 @@ function capitalise(word){
     return finalWord;
 };
 
-//--------changes game type to ask which country is this capital from-------
-
-function changeGame(){
-    change.innerHTML = "capitals";
-};
-
-change.addEventListener("click", changeGame);
-
-
-//--------- game running function will run when page id loaded and when "next question" is clicked
+//--------- game running function will run when page is loaded and when "next question" is clicked
 function playGame(){
     // -------------- blank input box for next question ----------
     answer.value = "";
@@ -56,30 +43,37 @@ function playGame(){
     // --------------------clear message from previous answer ----
     message.innerHTML = "";
 
+    //---------------removes next question button replaces with submit button-----
     sub.innerHTML = `<button>Submit</button>`;
     next.innerHTML = "";
 
+    // ------------- creates random number to choose random country from list ------
     let numlen = countries.length;
     let arrayPosition = Math.floor(Math.random()*numlen);
     chosenCountry = countries[arrayPosition];
     chosenCapital = capitals[arrayPosition];
 
+    // -------------- initial game question --------------------------
     question.innerHTML = `What is the Capital of ${capitalise(chosenCountry)}?`;
 
+    //-----------------removes mentioned country form list --------------
     let usedQuestion = countries.splice(arrayPosition,1);
     console.log(usedQuestion);
 
+    // ----------------removes answered Capital from list ----------------
     let usedAnswer = capitals.splice(arrayPosition,1);
     console.log(usedAnswer);
 
-    console.log(countries);
-    console.log(countries.length);
+    // --------------- ends game after all countries asked -------------
     if(countries.length == 0){
         gameOver();
     }
 
+    // -------------- submit answer event ---------------------------
     sub.addEventListener("click", runGame);
 };
+
+// ----------------- runs game at page loadtime-------------------
 document.addEventListener("DOMContentLoaded", playGame);
 
 // --------function to run the logic of the game -----
@@ -89,9 +83,8 @@ function runGame(){
     next.innerHTML = `<button>Next Question</button>`;
 }
 
+// -------------- next question event event ---------------------------
 next.addEventListener("click", playGame);
-// ------ function for correct answer ---------
-
 
 // -------function to invalidate whitespace  see stackoverflow https://stackoverflow.com/questions/1731190/check-if-a-string-has-white-space
 function hasWhiteSpace(s) {
@@ -135,6 +128,7 @@ function lifeRemoval(){
     };
 };
 
+// ------- function for correct answer ----------
 function correct(){
     message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`;
     incrementScore();
@@ -142,7 +136,7 @@ function correct(){
 
 // ------- function for invalid answer ----------
 function invalid(){
-    message.innerHTML = `<h2 id="correct-message-box">You have not given a valid answer!</h2>`;
+    message.innerHTML = `<h2 id="incorrect-message-box">You have not given a valid answer!</h2>`;
     
 }
 // ------ function for incorrect answer ---------
@@ -175,6 +169,8 @@ function gameOver(){
     playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
 };
 
+
+//--------------Jquery code for colour scheme change----------
 $(document).ready(function(){
     $("#theme").click(function(){
       $("body").css("color", "red");
