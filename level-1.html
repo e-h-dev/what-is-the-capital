@@ -13,28 +13,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!--main background image-->
     <div class="hero">
+        <!--opaque cover for background image-->
         <div class="opaque">
+            <!--navbar area-->
             <header class="wrapper">
-                <div class="logo"><img src=""></div>
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="level-2.html"><li>level 2</li></a>
+                    <!--Jquery click event to change colour scheme-->
                     <li id="theme">Theme</li>
                 </ul>
             </header>
+            <!--map image for game area-->
             <section class="game-area game-area-level-1">
+                <!--opaque cover game area-->
                 <div class="game-area-background game-area-background-level-1">
                     <h1 id="question"></h1>
                     <div id="next"><button>Next Question</button></div>
                 </div>
+                <!--lists out 4 possible answers-->
                 <section id="multiple-choice">
                     <div id="incorrect-choice"></div>
                 </section>
             </section>
+            <!--displays score-->
             <section class ="score-section-level-1" id="score-section">
                 <h3>your score is <span id="score">0</span></h3>
             </section>
+            <!--displays number of lives-->
             <section class="lives-section lives-section-level-1">
                 <div>You have <span id="number-of-lives">4</span> Lives Remaining!</div>
                 <div class="life-section">
