@@ -18,6 +18,7 @@ body{
 
 a{
    color:var(--dark-color); 
+   text-decoration: none;
 }
 
 li:hover{
@@ -75,9 +76,8 @@ button{
 }
 
 /*----------------styles for home page --------------------------------*/
-
-.start-hidden{
-    display: none;
+.game-area-index, .game-area-background-index{
+    height:570px;
 }
 
 .play-buttons{
@@ -85,13 +85,30 @@ button{
 }
 
 .nav-button{
-    height:80px;
+    height:60px;
     width:680px;
+    background-color: rgba(127, 255, 212, 0.3);
     border:outset 2px #000;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
     border-radius: 5px;
     margin:30px;
     cursor:pointer;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 15px;
+}
+
+#flip{
+    margin-bottom: 0;
+}
+
+.instructions{
+    width:680px;
+    background-color: rgba(127, 255, 212, 0.3);
+    border:outset 2px #000;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
+    margin-left: 30px;
+    margin-top: 0;
 }
 
 /*-----styles for level-1 and level-2 pages -----------*/
