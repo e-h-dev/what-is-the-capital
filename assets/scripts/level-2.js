@@ -7,7 +7,7 @@ let countries = ["england", "france", "germany", "japan", "ireland", "the USA", 
 let capitals = ["london", "paris", "berlin", "tokyo", "dublin", "washington", "dubai", "brasilia", "warsaw", "moscow", "kyev", "cardiff"];
 
 // -------- DOM element variables-----
-let change = document.getElementById("game-type");
+//let change = document.getElementById("game-type");
 let playArea = document.getElementById("play-area");
 let question = document.getElementById("question");
 let answer = document.getElementById("answer-box");
@@ -130,7 +130,7 @@ function lifeRemoval(){
 
 // ------- function for correct answer ----------
 function correct(){
-    message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`;
+    message.innerHTML = `<h2 id="correct-message-box">Well Done! the Capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u></h2>`;
     incrementScore();
 }
 
@@ -141,7 +141,7 @@ function invalid(){
 }
 // ------ function for incorrect answer ---------
 function incorrect(){
-    message.innerHTML = `<h2 id="incorrect-message-box">Sorry <mark>${answer.value}</mark> is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`;
+    message.innerHTML = `<h2 id="incorrect-message-box">Sorry <u>${answer.value}</u> is incorrect, the capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u> better luck next time</h2>`;
     subtractScore();
     lifeRemoval();
 }
@@ -166,7 +166,7 @@ function subtractScore(){
 function gameOver(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     question.innerHTML = "Game over!";
-    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
+    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
 };
 
 
