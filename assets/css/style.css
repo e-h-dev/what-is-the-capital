@@ -472,9 +472,11 @@ input:focus{
 
     .game-area-index{
         background-image: url("../images/map-background.jpg");
-        left: 10px;
+        left: 15px;
         width: 200px;
         border-radius: 15px;
+        width: 400px;
+        height: 600px;
     }
 
     .game-area-background-index{
@@ -484,6 +486,11 @@ input:focus{
 
     .nav-button{
         height:80px;
+        width:300px;
+        margin: 30px;
+    }
+
+    .instructions{
         width:300px;
     }
 }
