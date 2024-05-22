@@ -512,6 +512,10 @@ input:focus{
         width:300px;
         margin: 30px;
     }
+    .nav-button:hover{
+        background-color: var(--opaque-color);
+        width:300px;
+    }
 
     .instructions{
         width:300px;
@@ -527,7 +531,7 @@ input:focus{
         margin:0px;
         width:70px;
         height:20px;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .game-area-level-1{
@@ -577,5 +581,41 @@ input:focus{
         width: 330px;
         left: 50px;
         top: 0px;
+    }
+
+    /*----------- styles for level 1 page-----*/
+    .game-area-level-2{
+        background-image: url("../images/map-background.jpg");
+        left: 15px;
+        width: 200px;
+        border-radius: 15px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .game-area-background-level-2{
+        width: 400px;
+        height: 400px;
+    }
+
+    input{
+        width:330px;
+        height:80px;
+        margin-left: 30px;
+    }
+
+    #submit button{
+        position: relative;
+        top:50px;
+    }
+
+
+    .score-section-level-2 h3{
+        margin-left: 0px;
+        width:340px;
+    }
+
+    .lives-section-level-2{
+        left:20px;
     }
 }
