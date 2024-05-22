@@ -11,12 +11,19 @@
     <title>What's the Capital</title>
 </head>
 <body>
+    <!--main background image-->
     <div class="hero">
+        <!--opaque cover for background image-->
         <div class="opaque">
+            <!--map image for game area-->
             <section class="game-area game-area-index">
+                <!--opaque cover game area-->
                 <div class="game-area-background game-area-background-index">
+                    <!--div for group of menu buttons-->
                     <div class="play-buttons">
+                        <!--button toggles open and closed to show game instructions-->
                         <div class="nav-button" id="flip">how to play</div>
+                        <!--instructions div-->
                         <div id="panel" class="start-hidden instructions">
                             <h2>How to Play</h2>
                             <p>The aim of What's the Capital, is to test oneself with as many odf the 
@@ -24,7 +31,9 @@
                             </p>
                         </div>
                         <br>
-                            <a href="level-1.html"><div class="nav-button">level 1</div></a><br>
+                        <!--link to play level 1-->
+                        <a href="level-1.html"><div class="nav-button">level 1</div></a><br>
+                        <!--link to play level 2-->
                         <a href="level-2.html"><div class="nav-button">level 2</div></a>
                     </div>
                 </div>
@@ -32,6 +41,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--Jquery code to toggle instructions div-->
     <script>
         $("#flip").click(function(){
                 $("#panel").slideToggle();
