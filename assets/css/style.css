@@ -147,15 +147,17 @@ li{
 
 }
 
-#game-type{
-    cursor: pointer;
-}
-
 h1{
     font-size: 56px;
     font-weight: 300;
     text-align: center;
     padding: 15px;
+}
+
+.game-over{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
 }
 
 .life-section{
@@ -285,11 +287,14 @@ input:focus{
 #correct-message-box, #incorrect-message-box{
     text-align: center;
     font-family:var(--main-text);
-    font-size: 28px;
+    font-weight: 300;
+    font-size: 25px;
     padding:25px;
     height: 30px;
     width:800px;
     border-radius: 10px;
+    border:outset 2px #000;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
 }
 
 @keyframes message-change {
