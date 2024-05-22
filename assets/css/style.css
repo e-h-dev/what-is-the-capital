@@ -224,6 +224,12 @@ h1{
     max-height: 450px;
 }
 
+.game-area-background-level-2{
+    width: 830px;
+    height: 35vh;
+    max-height: 450px;
+}
+
 input{
     height:50px;
     width: 250px;
@@ -404,6 +410,59 @@ input:focus{
         left:180px;
         top:30px;
         margin:0;
+    }
+
+    /*----------styles for level 2 page -------*/
+    .game-area-level-2{
+        width: 700px;
+        height: 450px;
+        border-radius: 15px;
+        top:50px;
+        position: relative;
+    }
+    
+    .game-area-background-level-2{
+        height:450px;
+        position: relative;
+        top:0px;
+    }
+
+    #play-area{
+        width:500px;
+    }
+
+    button{
+        width: 160px;
+        height: 70px;
+        position: relative;
+        font-size: 22px;
+        top: 60px;
+        left: 280px;
+    }
+
+    input{
+        width:500px;
+        height:100px;
+        margin-left: 100px;
+    }
+
+    #next{
+        margin-left:0px;
+    }
+
+    .lives-section-level-2{
+        left:200px;
+        top:200px;
+    }
+
+    #correct-message-box{
+        width: 600px;
+        margin-left: 25px;
+    }
+
+    #incorrect-message-box{
+        width:650px;
+        height: 70px;
     }
 }
 
