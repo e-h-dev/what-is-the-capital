@@ -172,7 +172,7 @@ h1{
 
 #multiple-choice{
     text-align: center;
-    font-family: "Caveat Brush";
+    font-family: var(--main-text);
     font-size: 32px;
     position: absolute;
     top: 85px;
@@ -366,6 +366,44 @@ input:focus{
         border-radius: 5px;
         margin:50px;
         cursor:pointer;
+    }
+
+    /*--------styles for level 1 page----------*/
+    ul{
+        margin-left: 40px;
+    }
+    .game-area-level-1{
+        width: 700px;
+        height: 650px;
+        border-radius: 15px;
+        top:0;
+    }
+    
+    .game-area-background-level-1{
+        height:650px;
+    }
+
+    .incorrect{
+        height:80px;
+        width:350px;
+        padding-top:40px;
+        left:180px;
+        border-radius: 15px;
+        font-size: 36px;
+    }
+
+    #next {
+        margin-top: 10px;
+        margin-left: 520px;
+        position: relative;
+        top: 550px;
+    }
+
+    .lives-section-level-1{
+        position: relative;
+        left:180px;
+        top:30px;
+        margin:0;
     }
 }
 
