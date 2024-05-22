@@ -77,7 +77,7 @@ function lifeRemoval(){
 function gameOver(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     question.innerHTML = "Game over!";
-    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
+    next.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over"><mark>You have scored ${oldScore} points!</mark></h3><br><button><a href="index.html">Play Again!</a></button>`;
 };
 
 function show(myClick){
