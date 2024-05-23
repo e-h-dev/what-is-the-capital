@@ -204,13 +204,16 @@ h1{
     z-index: 2;
 }
 
+.incorrect-choice{
+    position: relative;
+    left: 300px;
+}
+
 .incorrect{
     background-color: rgba(0, 180, 235, 0.8);
     width:220px;
     margin:10px;
     cursor: pointer;
-    position: relative;
-    left: 300px;
     border-radius: 5px;
 }
 
