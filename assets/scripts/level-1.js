@@ -128,8 +128,8 @@ function runGame(){
     let chosenCapital = capitals[arrayPosition];
     
     // ---------innerHTML of messages to be displayed
-    wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${capitalise(chosenCountry)} is <mark>${capitalise(chosenCapital)}!</mark> better luck next time</h2>`
-    correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${capitalise(chosenCountry)} is <mark>${capitalise(chosenCapital)}!</mark></h2>`
+    wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the Capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u> better luck next time!</h2>`
+    correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u></h2>`
     
     //--------------chooses the question------
     question.innerHTML =  `What is the capital of ${capitalise(chosenCountry)}? `;
