@@ -27,6 +27,15 @@ let life4 = document.getElementById("life4");
 let listOfLives = [life1, life2, life3, life4];
 let lifeNumber = 4;
 
+//-------function to capitalise words on the DOM--------
+function capitalise(word){
+    let firstLetter = word.charAt(0);
+    let firstToCap = firstLetter.toUpperCase();
+    let remainingLetters = word.slice(1);
+    let finalWord = firstToCap + remainingLetters;
+    return finalWord;
+};
+
 //----------fisher and yates shuffle logic
 function randomise(myList){
     let size = myList.length;
@@ -119,11 +128,11 @@ function runGame(){
     let chosenCapital = capitals[arrayPosition];
     
     // ---------innerHTML of messages to be displayed
-    wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${chosenCountry} is <mark>${chosenCapital}!</mark> better luck next time</h2>`
-    correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${chosenCountry} is <mark>${chosenCapital}!</mark></h2>`
+    wrongMessage = `<h2 id="incorrect-message-box">Sorry that is incorrect, the capital of ${capitalise(chosenCountry)} is <mark>${capitalise(chosenCapital)}!</mark> better luck next time</h2>`
+    correctMessage = `<h2 id="correct-message-box">Well Done! the Capital of ${capitalise(chosenCountry)} is <mark>${capitalise(chosenCapital)}!</mark></h2>`
     
     //--------------chooses the question------
-    question.innerHTML =  `What is the capital of ${chosenCountry}? `;
+    question.innerHTML =  `What is the capital of ${capitalise(chosenCountry)}? `;
 
     //--------------------- remove chosenCapital --------------------
     let remove = arrayPosition;
@@ -157,12 +166,12 @@ function runGame(){
     spareList.splice(newArrayPosition, 1);
 
     //--------map element to loop through each list and recreate the inner html
-    const result2 = shortList1.map(function(cap){return `<div class="incorrect" id="result2" onclick="show('result2')">${cap}</div>`});
-    const result3 = shortList2.map(function(cap){return `<div class="incorrect" id="result3" onclick="show('result3')">${cap}</div>`});
-    const result4 = shortList3.map(function(cap){return `<div class="incorrect" id="result4" onclick="show('result4')">${cap}</div>`});
+    const result2 = shortList1.map(function(cap){return `<div class="incorrect" id="result2" onclick="show('result2')">${capitalise(cap)}</div>`});
+    const result3 = shortList2.map(function(cap){return `<div class="incorrect" id="result3" onclick="show('result3')">${capitalise(cap)}</div>`});
+    const result4 = shortList3.map(function(cap){return `<div class="incorrect" id="result4" onclick="show('result4')">${capitalise(cap)}</div>`});
 
     //---------- creates the multiple choice box for correct answer
-    let correctResult = `<div class="incorrect" id="result1" onclick="answer('result1')">${chosenCapital}</div>`
+    let correctResult = `<div class="incorrect" id="result1" onclick="answer('result1')">${capitalise(chosenCapital)}</div>`
     
     // --------- chooses position of each possible answer
     let result1_1 = correctResult;

@@ -149,7 +149,7 @@ function invalid(){
 }
 // ------ function for incorrect answer ---------
 function incorrect(){
-    message.innerHTML = `<h2 id="incorrect-message-box">Sorry <u>${answer.value}</u> is incorrect, the capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u> better luck next time</h2>`;
+    message.innerHTML = `<h2 id="incorrect-message-box">Sorry <u>${capitalise(answer.value)}</u> is incorrect, the capital of ${capitalise(chosenCountry)} is <u>${capitalise(chosenCapital)}!</u> better luck next time</h2>`;
     subtractScore();
     lifeRemoval();
 }
