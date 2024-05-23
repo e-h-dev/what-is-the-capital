@@ -70,18 +70,14 @@ function playGame(){
     }
 
     // -------------- submit answer event ---------------------------
-    sub.addEventListener("click", runGame);
+    sub.addEventListener("click", answerCheck);
 };
 
 // ----------------- runs game at page loadtime-------------------
 document.addEventListener("DOMContentLoaded", playGame);
 
 // --------function to run the logic of the game -----
-function runGame(){
-    answerCheck();
-    sub.innerHTML = "";       
-    next.innerHTML = `<button>Next Question</button>`;
-}
+
 
 // -------------- next question event event ---------------------------
 next.addEventListener("click", playGame);
@@ -91,18 +87,32 @@ function hasWhiteSpace(s) {
     return /\s/g.test(s);
   }
 
+function filledIn(){
+    sub.innerHTML = "";       
+    next.innerHTML = `<button>Next Question</button>`;
+};
+
+function emptySpace(){
+    sub.innerHTML = `<button>Submit</button>`;       
+    next.innerHTML = "";
+    // -------------- blank input box for next question ----------
+    answer.value = "";
+    // -----------------focus on input box---------------------
+    answer.focus();
+}
 //------ checks value of answer if correct wrong or invalid --------
 function answerCheck(checkAnswer){
     checkAnswer = answer.value;
     console.log(checkAnswer);
     if (checkAnswer === chosenCapital){
         correct();
-    }else if(checkAnswer === ""){
-        invalid();
+        filledIn();
     }else if(hasWhiteSpace(checkAnswer)){
         invalid();
+        emptySpace();
     }else if(checkAnswer !== chosenCapital){
         incorrect();
+        filledIn();
     };
 };
 
@@ -175,7 +185,7 @@ $(document).ready(function(){
     $("#theme").click(function(){
       $("body").css("color", "rgb(220, 26, 6)");
       $(".opaque").css("background-color", "rgba(255, 170, 51, 0.5)");
-      $("ul").css("background-color", "rgba(255, 170, 51, 0.5)");
+      $("ul").css({"background-color":"rgba(255, 170, 51, 0.5)", "width":"400px", "margin-left":"450px"});
       $(".game-area-background").css("background-color", "rgba(255, 170, 51, 0.5)");
       $("button").css("background-color", "rgb(255, 170, 52)");
       $("button").css("color", "rgb(220, 26, 6)");
@@ -185,6 +195,6 @@ $(document).ready(function(){
       $("h1").css("color", "rgb(220, 26, 6)");
       $("h3").css("background-color", "rgba(255, 170, 52, 0.7)");
       $(".lives-section-level-2").css("background-color", "rgba(255, 170, 52, 0.7)");
-      $("#theme").html('');
+      $("#theme").remove();
     });
   });
