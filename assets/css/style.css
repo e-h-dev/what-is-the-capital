@@ -549,7 +549,7 @@ input:focus{
         top:200px;
     }
 
-    #correct-message-box{
+    #correct-message-box, #correct-message-box-level-2{
         left:-50px;
         width: 450px;
         margin-left: 25px;
@@ -561,7 +561,7 @@ input:focus{
         height: 70px;
     }
 
-    #incorrect-message-box-level-2{
+    #incorrect-message-box-level-2, #correct-message-box-level-2{
         left:100px;
     }
 
