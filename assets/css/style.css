@@ -555,10 +555,19 @@ input:focus{
         margin-left: 25px;
     }
 
-    #incorrect-message-box{
+    #incorrect-message-box, #incorrect-message-box-level-2{
         left:-50px;
         width:450px;
         height: 70px;
+    }
+
+    #incorrect-message-box-level-2{
+        left:100px;
+    }
+
+    #next button{
+        top:-500px;
+        left:-250px;
     }
 }
 
