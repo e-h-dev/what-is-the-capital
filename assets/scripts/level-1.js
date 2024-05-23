@@ -97,9 +97,9 @@ function gameOver(){
     setTimeout(endGameMessage, 1500);
     function endGameMessage(){
         if (lifeNumber == 0){
-            divSpace.innerHTML = `<h2 class="game-over-out">You have run out of lives!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
+            divSpace.innerHTML = `<h3 class="game-over-out">You have run out of lives!<br>You have scored <u>${oldScore}</> points!</h3>`;
         } else if(countries.length == 0){
-            divSpace.innerHTML = `<h2 class="game-over-done">Well done! You have answered all questions correctly!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
+            divSpace.innerHTML = `<h3 class="game-over-done">Well done! You have answered all questions correctly!<br>You have scored <u>${oldScore}</> points!</h3>`;
         };
     };
 };
