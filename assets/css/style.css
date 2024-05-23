@@ -308,8 +308,8 @@ input:focus{
     position: relative;
     border-radius: 15px;
     margin-top: 50px;
-    left: 950px;
-    top:50px;
+    left: 440px;
+    top: 80px;
     width:350px;
     font-size: 28px;
 }
