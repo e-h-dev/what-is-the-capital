@@ -13,29 +13,39 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!--main background image-->
     <div class="hero">
+        <!--opaque cover for background image-->
         <div class="opaque">
+            <!--navbar area-->
             <header class="wrapper">
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href="level-1.html" target="_blank"><li>level 1</li></a>
+                    <!--Jquery click event to change colour scheme-->
                     <li id="theme">Theme</i></li>
                 </ul>
             </header>
+            <!--map image for game area-->
             <section class="game-area game-area-level-2">
+                <!--opaque cover game area-->
                 <div class="game-area-background game-area-background-level-2">
                     <h1 id="question"></h1>
+                    <!--user inout and submit area-->
                     <div id="play-area">
                         <input type="text" id="answer-box" name="answer-box" placeholder="Your Answer Here!">
                         <span id="submit"><button>Submit</button></span>
                         <span id="next"></span>
                     </div>
                 </div>
+                <!--message display div-->
                 <div id="message"></div>
+                <!--displays score-->
                 <div class ="score-section-level-2" id="score-section">
                     <h3>Your score is <span id="score">0</span></h3>
                 </div>
             </section>
+            <!--displays number of lives-->
             <section class="lives-section-level-2">
                 <div>You have <span id="number-of-lives">4</span> Lives Remaining!</div>
                 <div class="life-section">
