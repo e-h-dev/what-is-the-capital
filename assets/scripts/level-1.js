@@ -47,11 +47,6 @@ function randomise(myList){
     while(size != 0){
     let randPosition = Math.floor(Math.random() * size);
     size--;
-
-    console.log(size);
-
-    console.log(randPosition);
-
     [myList[size], myList[randPosition]] = [myList[randPosition], myList[size]];
     };
 };
@@ -129,10 +124,9 @@ function answer(myClick){
 function runGame(){
     
     let arrayPosition = Math.floor(Math.random() *countries.length);
-    console.log(countries.length);
+    
     
     console.log(countries);
-    console.log(capitals);
     
     // ------- variables for random countries and capitals
     
@@ -148,14 +142,10 @@ function runGame(){
 
     //--------------------- remove chosenCapital --------------------
     let remove = arrayPosition;
-    console.log(remove);
-   
-    let usedQuestion = countries.splice(remove,1)
-    let usedAnswer = capitals.splice(remove,1);
-    console.log(usedAnswer);
-    console.log(usedQuestion);
+    countries.splice(remove,1)
+    capitals.splice(remove,1);
+
     console.log(countries);
-    console.log(capitals);
 
     //------------- create shorter lists for the wrong answer options(will not have double of the same option)
     let shortList1 = capitals.slice(0,4);
@@ -176,6 +166,10 @@ function runGame(){
     let newArrayPosition = Math.floor(Math.random() *spareList.length)
     capitals.push(spareList[newArrayPosition]);
     spareList.splice(newArrayPosition, 1);
+
+    console.log(shortList1);
+    console.log(shortList2);
+    console.log(shortList3);
 
     //--------map element to loop through each list and recreate the inner html
     const result2 = shortList1.map(function(cap){return `<div class="incorrect" id="result2" onclick="show('result2')">${capitalise(cap)}</div>`});
