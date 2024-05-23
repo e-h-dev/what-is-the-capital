@@ -186,7 +186,7 @@ $(document).ready(function(){
     $("#theme").click(function(){
       $("body").css("color", "rgb(220, 26, 6)");
       $(".opaque").css("background-color", "rgba(255, 170, 51, 0.5)");
-      $("ul").css("background-color", "rgba(255, 170, 51, 0.5)");
+      $("ul").css({"background-color":"rgba(255, 170, 51, 0.5)", "width":"400px", "margin-left":"450px"});
       $(".game-area-background").css("background-color", "rgba(255, 170, 51, 0.5)");
       $("button").css("background-color", "rgb(255, 170, 52)");
       $("button").css("color", "rgb(220, 26, 6)");
@@ -197,7 +197,7 @@ $(document).ready(function(){
       $("h3").css("background-color", "rgba(255, 170, 52, 0.7)");
       $(".incorrect").css("background-color", "rgba(255, 170, 52, 0.7)");
       $(".lives-section-level-1").css("background-color", "rgba(255, 170, 52, 0.7)");
-      $("#theme").html('');
+      $("#theme").remove();
     });
   });
 
