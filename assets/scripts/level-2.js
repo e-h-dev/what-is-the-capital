@@ -183,7 +183,11 @@ function subtractScore(){
 function gameOver(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     question.innerHTML = "Game over!";
-    playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
+    if (lifeNumber == 0){
+        playArea.innerHTML = `<h2 class="game-over">You have run out of lives!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
+    } else if(countries.length == 0){
+        playArea.innerHTML = `<h2 class="game-over">Well done! You have answered all questions correctly!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
+    }
 };
 
 
