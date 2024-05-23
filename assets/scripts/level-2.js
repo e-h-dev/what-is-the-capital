@@ -7,7 +7,6 @@ let countries = ["afghanistan","albania","algeria","andorra","angola","antigua a
 let capitals = ["kabul","tirana","algiers","andorra la vella","luanda","saint john's","buenos aires","yerevan","canberra","vienna","baku","nassau","manama","dhaka","bridgetown","minsk","brussels","belmopan","porto novo","thimphu","sucre","sarajevo","gaborone","brasilia","bandar seri begawan","sofia","ouagadougou","gitega","phnom penh","yaounde","ottawa","praia","bangui","n'djamena","santiago","beijing","bogota","moroni","brazzaville","san jose","yamoussoukro","zagreb","havana","nicosia","prague","copenhagen","djibouti","roseau","santo domingo","dili","quito","cairo","san salvador","london","malabo","asmara","tallinn","mbabane","addis ababa","palikir","suva","helsinki","paris","libreville","banjul","tbilisi","berlin","accra","athens","saint george's","guatemala city","conakry","bissau","georgetown","port au prince","tegucigalpa","budapest","reykjavik","new delhi","jakarta","tehran","baghdad","dublin","jerusalem","rome","kingston","tokyo","amman","astana","nairobi","tarawa atoll","pristina","kuwait city","bishkek","vientiane","riga","beirut","maseru","monrovia","tripoli","vaduz","vilnius","luxembourg","antananarivo","lilongwe","kuala lumpur","male","bamako","valletta","majuro","nouakchott","port louis","mexico city","chisinau","monaco","ulaanbaatar","podgorica","rabat","maputo","nay pyi taw","windhoek","yaren","kathmandu","amsterdam","wellington","managua","niamey","abuja","pyongyang","skopje","belfast","oslo","muscat","islamabad","melekeok","jerusalem","panama city","port moresby","asuncion","lima","manila","warsaw","lisbon","doha","bucharest","moscow","kigali","basseterre","castries","kingstown","apia","san marino","sao tome","riyadh","edinburgh","dakar","belgrade","victoria","freetown","singapore","bratislava","ljubljana","honiara","mogadishu","cape town","seoul","juba","madrid","sri jayawardenapura kotte","khartoum","paramaribo","stockholm","bern","damascus","taipei","dushanbe","dodoma","bangkok","lome","nuku'alofa","port of spain","tunis","ankara","ashgabat","funafuti","kampala","kiev","abu dhabi","london","washington d.c.","montevideo","tashkent","port vila","vatican city","caracas","hanoi","cardiff","sana'a","lusaka","harare"]
 
 // -------- DOM element variables-----
-//let change = document.getElementById("game-type");
 let playArea = document.getElementById("play-area");
 let question = document.getElementById("question");
 let answer = document.getElementById("answer-box");
@@ -76,22 +75,21 @@ function playGame(){
 // ----------------- runs game at page loadtime-------------------
 document.addEventListener("DOMContentLoaded", playGame);
 
-// --------function to run the logic of the game -----
-
-
 // -------------- next question event event ---------------------------
 next.addEventListener("click", playGame);
 
-// -------function to invalidate whitespace  see stackoverflow https://stackoverflow.com/questions/1731190/check-if-a-string-has-white-space
+// -------function to invalidate whitespaces
 function hasWhiteSpace(s) {
     return /\s/g.test(s);
   }
 
+// ----------removes submit button if filled in and display next button
 function filledIn(){
     sub.innerHTML = "";       
     next.innerHTML = `<button>Next Question</button>`;
 };
 
+//----------submit button will remian if input not valid
 function emptySpace(){
     sub.innerHTML = `<button>Submit</button>`;       
     next.innerHTML = "";
