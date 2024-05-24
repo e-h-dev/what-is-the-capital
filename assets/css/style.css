@@ -580,7 +580,9 @@ input:focus{
 
 /*media query for mobile*/
 @media screen and (max-width:600px){
-
+    .hero{
+        width:100vw;
+    }
 
     .game-area-index{
         background-image: url("../images/map-background.jpg");
@@ -850,21 +852,6 @@ input:focus{
         top: 0px;
     }
 
-    /*----------- styles for level 2 page-----*/
-    .game-area-level-2{
-        background-image: url("../images/map-background.jpg");
-        left: 15px;
-        width: 200px;
-        border-radius: 15px;
-        width: 400px;
-        height: 400px;
-    }
-
-    .game-area-background-level-2{
-        width: 400px;
-        height: 400px;
-    }
-
     #multiple-choice{
         left:0px;
     }
@@ -874,26 +861,42 @@ input:focus{
         top: 330px;
     }
 
-    /* ------ styles for level 2 ----*/
+    /*----------- styles for level 2 page-----*/
+    .game-area-level-2{
+        background-image: url("../images/map-background.jpg");
+        left: 20px;
+        width: 200px;
+        border-radius: 15px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .game-area-background-level-2{
+        width: 350px;
+        height: 350px;
+    }
 
     input{
-        width:330px;
+        width:280px;
         height:80px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     #submit button{
-        position: relative;
-        top:50px;
+        margin-right: 50px;
+        right: 0px;
+        left: 100px;
     }
 
     .score-section-level-2 h3{
-        margin-left: 0px;
-        width:340px;
+        margin-left: 30px;
+        width:240px;
     }
 
     .lives-section-level-2{
-        left:20px;
+        left:50px;
+        width: 240px;
+        top:150px;
     }
 
     #correct-message-box, #incorrect-message-box{
