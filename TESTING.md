@@ -1,3 +1,29 @@
+# What's the Capital Testing
+
+![What's the Capital Testing](assets/validation-images/responsive.png)
+
+Visit the deployed site: [What's the Capital Testing](https://e-h-dev.github.io/what-is-the-capital/)
+
+- - -
+
+## CONTENTS
+* [Validation](#validation)
+  * [Lighthouse](#lighthouse)
+* [AUTOMATED TESTING](#automated-testing)
+  * [w3c HTML checks](#w3c-html-checks)
+  * [Jigsaw css check](#jigsaw-css-check)
+  * [Jshint Java Script test](#jshint-java-script-test)
+* [Testing User Stories](#testing-user-stories)
+* [Full Testing](#full-testing)
+
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
+
+During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
+
+I have gone through each page using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
+
+- - -
+
 ## Validation
 
 ### lighthouse 
@@ -10,6 +36,8 @@
  * Level 2
  ![level-2.html lighthouse](assets/validation-images/lighthouse-level-2.png)
 
+ ## AUTOMATED TESTING
+
  ### w3c HTML checks
  * Home page
  ![index.html html check](assets/validation-images/html-checker-index.png)
@@ -18,17 +46,42 @@
  * Level 2
  ![level-2.html html check](assets/validation-images/html-checker-level-2.png)
 
- ### jigsaw css check
+ ### Jigsaw css check
  ![css check](assets/validation-images/css-checker.png)
 
  ### Jshint Java Script test
  * My code was used with many ES6 java script syntax these were flagged as a warning by jshint.
- * No other warnongs were present.
+ * No other warnings were present.
  * Level 1
  ![level-1 jshint check](assets/validation-images/jshint-level-1.png)
  * Level 2
  ![level-2 jshint check](assets/validation-images/jshint-level-2.png)
  
+### Testing user stories
+
+#### First Time Visitor Goals.
+
+| REF | Goals | How are they achieved? |
+| :--- | :--- | :--- |
+| A | I want to have easy access to a quiz on Coutries and their Capitals, to improve my geographic knowledge. I want to be able to play at any time, anywhere. | What's the Cpital is ab easy to access website, it has clear instructions and it is easy to navigate. |
+| B | I want the site to be responsive to my device. | With multiple media quries the website is responsive over a range of devices. |
+| C | I want the site to be easy to navigate. | With clear nav links which change when hoverd over, the website is super easy to navigate round. |
+| D | I want clear response messages if my answer is correct. | Half a second after a correct answer a clear green message box appears. |
+| E | I want to be shown the correct answer if my answer is incorrect. | If an answer is incorrect a message box comes on the screen, displaying the correct answer |
+
+#### Returning Visitor Goals
+
+| REF | Goals | How are they achieved? |
+| :--- | :--- | :--- |
+| G | I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site. | At the home page and at the game pages, it is easy to navigate to a higher or lower playing level |
+
+#### Frequent Visitor Goals
+
+| REF | Goals | How are they achieved? |
+| :--- | :--- | :--- |
+| F | I want to be able to adjust the difficulty level to keep improving my knowledge. | After playing at level 1 and learning many new Capitals, the user can easily change to level 2, a more challenging aproach to the quiz. |
+| H |I want to be able to see my scores, to see how I am performing. | The score are clearly diplayed below the game playing area. The score changes after each valid answer. |
+
 
 ### Full Testing
 
