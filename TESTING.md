@@ -125,7 +125,7 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Theme | Should change colour of game to a orange color | Clicked on Theme button | The colors of the game change (image-1) | 
 
 #### 1.
-[Orange coloue scheme](assets/test-images/color-theme-2.png)
+![Orange coloue scheme](assets/test-images/color-theme-2.png)
 
 `Level-1 page`
 
