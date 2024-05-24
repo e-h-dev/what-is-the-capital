@@ -580,18 +580,19 @@ input:focus{
 
 /*media query for mobile*/
 @media screen and (max-width:600px){
+
+
     .game-area-index{
         background-image: url("../images/map-background.jpg");
         left: 15px;
-        width: 200px;
         border-radius: 15px;
         width: 400px;
-        height: 600px;
+        height: 900px;
     }
 
     .game-area-background-index{
         width: 400px;
-        height: 600px;
+        height: 900px;
     }
 
     .nav-button{
@@ -617,6 +618,13 @@ input:focus{
     }
 
     li{
+        margin:0px;
+        width:70px;
+        height:20px;
+        font-size: 22px;
+    }
+
+    li a{
         margin:0px;
         width:70px;
         height:20px;
@@ -727,3 +735,174 @@ input:focus{
         top:-500px;
     }
 }
+/*media query for  small mobile*/
+@media screen and (max-width:390px){
+    .hero{
+        width:102vw;
+    }
+
+    .game-area-index{
+        background-image: url("../images/map-background.jpg");
+        left: 25px;
+        border-radius: 15px;
+        width: 300px;
+        height: 800px;
+    }
+
+    .game-area-background-index{
+        width: 300px;
+        height: 800px;
+    }
+
+    .nav-button{
+        height:80px;
+        width:300px;
+        margin: 30px;
+    }
+    .nav-button:hover{
+        background-color: var(--opaque-color);
+        width:300px;
+    }
+
+    .instructions{
+        width:300px;
+    }
+
+    /*----------- styles for level 1 page-----*/
+    ul{
+        height: 50px;
+        padding-bottom:10px;
+        font-size: 24px;
+        margin-left: 0px;
+    }
+
+    li{
+        margin:0px;
+        width:70px;
+        height:20px;
+        font-size: 22px;
+    }
+
+    li a{
+        margin:0px;
+        width:70px;
+        height:20px;
+        font-size: 22px;
+    }
+   
+    /*-----styles for level 1 page----*/
+    .game-area-level-1{
+        background-image: url("../images/map-background.jpg");
+        left: 20px;
+        border-radius: 15px;
+        width: 350px;
+        height: 500px;
+    }
+
+    .game-area-background-level-1{
+        width: 350px;
+        height: 500px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .incorrect-choice{
+        position: absolute;
+        top:150px;
+    }
+
+    .incorrect{
+        background-color: rgba(0, 180, 235, 0.8);
+        height:60px;
+        font-size: 28px;
+        width:280px;
+        margin:10px;
+        padding:0px;
+        cursor: pointer;
+        position: relative;
+        left: 30px;
+        border-radius: 5px;
+    }
+    button{
+        width: 160px;
+        height: 70px;
+        position: relative;
+        font-size: 22px;
+        top: -150px;
+        left: 120px;
+    }
+    .score-section-level-1{
+        position: relative;
+        left:20px;
+        width:300px;
+    }
+
+    .score-section-level-1 h3{
+        margin-left: 0;
+        width:280px;
+    }
+
+    .lives-section-level-1{
+        width: 330px;
+        left: 20px;
+        top: 0px;
+    }
+
+    /*----------- styles for level 2 page-----*/
+    .game-area-level-2{
+        background-image: url("../images/map-background.jpg");
+        left: 15px;
+        width: 200px;
+        border-radius: 15px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .game-area-background-level-2{
+        width: 400px;
+        height: 400px;
+    }
+
+    #multiple-choice{
+        left:0px;
+    }
+
+    #next{
+        left: 100px;
+        top: 330px;
+    }
+
+    /* ------ styles for level 2 ----*/
+
+    input{
+        width:330px;
+        height:80px;
+        margin-left: 30px;
+    }
+
+    #submit button{
+        position: relative;
+        top:50px;
+    }
+
+    .score-section-level-2 h3{
+        margin-left: 0px;
+        width:340px;
+    }
+
+    .lives-section-level-2{
+        left:20px;
+    }
+
+    #correct-message-box, #incorrect-message-box{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    #next-level-2 button{
+        top:-500px;
+    }
+}
+
