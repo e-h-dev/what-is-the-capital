@@ -1,3 +1,19 @@
+## Validation
+
+### lighthouse 
+* Each page has had a lighthouse test and passed 
+ #### Lightnouse text images
+ ![index.html lighthouse]()
+ ![index.html lighthouse]()
+ ![index.html lighthouse]()
+
+ ### w3c HTML checks
+
+ ### jigsaw css check
+
+ ### Jshint Java Script test
+ 
+
 ### Full Testing
 
 Full testing was performed on the following devices:
