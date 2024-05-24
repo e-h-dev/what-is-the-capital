@@ -11,6 +11,26 @@
 - [Table of Contents](#table-of-contents)
 - [Project Rationale](#project-rationale)
 - [User Experiance (UX)](#user-experience-ux)
+  - [User stories](#user-stories)
+- [Design](#design)
+  - [Colur Scheme](#colour-scheme)
+  - [Typographt](#typography)
+  - [Imagery](#imagery)
+  - [Wireframes](#wireframes)
+- [What's the Capital Pages](#whats-the-capital-pages)
+  - [Features](#features)
+    - [The Home Page](#the-home-page)
+    - [Level 1 Page](#level-1-page)
+    - [Level 2 Page](#level-2-page)
+    - [Error pages](#error-pages)
+- [Accessibility](#accessibility)
+- [Technologies used](#technologies-used)
+- [Deployment](#deployment--local-development)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Credits](#credits)
+
+
 
 ## Project Rationale
 
@@ -46,7 +66,7 @@
 
 - - -
 
-# Design
+## Design
 
 ### Colour Scheme
 
@@ -141,7 +161,7 @@ HTML, CSS, JavaScript
 
 ### Frameworks, Libraries & Programs Used
 
-* [JQUERY](https://jquery.com/) - Used to erite code for the  colour theme change and the how to play toggle
+* [JQUERY](https://jquery.com/) - Used to write code for the colour theme change and the how to play toggle
 
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
