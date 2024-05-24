@@ -204,6 +204,27 @@ To clone the repository:
 
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
+- - -
+
+## Bugs
+
+
+### Solved Bugs
+
+| Number | Bug | How I fixed the bug |
+| :--- | :--- | :--- |
+| 1 | Since questions load at random the same question was being asked in close proximity |
+| 2 | On level one page after a few plays some of the multiple choice options display undefined |
+| 3 | Clicking in the game area loaded next question at wrong time |
+| 4 | After Game over message loaded the game could still be played |
+| 5 | Wrong answers made score below 0 |
+
+
+### Known Bugs
+
+Originally the form was designed to POST to the code institute form dump. My mentor advised me that it would be better to create a separate page, that shows after the user has submitted the form, this is better for UX. With this I created the booking confirmation page, the form is linked to open the booking-confirmation page when the form is submitted. This however, will not display or confirm the input items.
+
+
 ## Credits
 
 ### Media
