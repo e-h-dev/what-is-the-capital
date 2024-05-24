@@ -20,8 +20,8 @@
             <!--navbar area-->
             <header class="wrapper">
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="level-2.html"><li>level 2</li></a>
+                    <li></li><a href="index.html">Home</a></li>
+                    <li><a href="level-2.html">level 2</a></li>
                     <!--Jquery click event to change colour scheme-->
                     <li id="theme">Theme 2</li>
                 </ul>
@@ -30,20 +30,20 @@
             <section class="game-area game-area-level-1">
                 <!--opaque cover game area-->
                 <div class="game-area-background game-area-background-level-1">
-                    <h1 id="question"></h1>
+                    <h1 id="question">question</h1>
                     <div ><button id="next">Next Question</button></div>
                 </div>
                 <!--lists out 4 possible answers-->
-                <section id="multiple-choice">
+                <div id="multiple-choice">
                     <div id="incorrect-choice"></div>
-                </section>
+                </div>
             </section>
             <!--displays score-->
             <section class ="score-section-level-1" id="score-section">
                 <h3>your score is <span id="score">0</span></h3>
             </section>
             <!--displays number of lives-->
-            <section class="lives-section lives-section-level-1">
+            <div class="lives-section lives-section-level-1">
                 <div>You have <span id="number-of-lives">4</span> Lives Remaining!</div>
                 <div class="life-section">
                     <span id="life1"><i class="fa fa-heart"></i></span>
@@ -51,7 +51,7 @@
                     <span id="life3"><i class="fa fa-heart"></i></span>
                     <span id="life4"><i class="fa fa-heart"></i></span>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
