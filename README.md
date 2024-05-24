@@ -233,20 +233,22 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 | Number | Bug | How I fixed the bug |
 | :--- | :--- | :--- |
-| 1 | Since questions load at random the same question was being asked in close proximity |
-| 2 | On level one page after a few plays some of the multiple choice options display undefined |
-| 3 | Clicking in the game area loaded next question at wrong time |
-| 4 | After Game over message loaded the game could still be played |
-| 5 | Wrong answers made score below 0 |
-| 6 | At the game load on level 1 some questions are partially covered by the mulitiple choice options |
-| 7 | After an invalid input on level 2, there was no option to answer the question, only to load the next quesiton |
+| 1 | Since questions load at random the same question was being asked in close proximity | To remove this I built a function which updates the list, removing the asked Country from the main list |
+| 2 | On level one page, after a few plays some of the multiple choice options display undefined | This was since the asked quesiton and corresponding answer was removed the small lists built for the mulitiple choice options empty giving a value of undefined. to fix this i have added another list of random Cities to fill the emptied shotrlists. |
+| 3 | Clicking in the game area loaded next question at wrong time | This was because the button html element which trigered the load of the next question was not removed after question was asked. I had only set the innerHTML to `""`, by replacing that with the `remove()` function the bug was solved |
+| 4 | On level 2 after Game was over  the message did not load and the game could still be played | This was a bug in the runGame function it did not include the gameOver fundtion in the if statement, by adding another if else with the gameOver function, the bug was solve. |
+| 5 | Wrong answers made score below 0 | I added an if statement to the subtractScore function, that it will only remove a score if it's value is more than 0 |
+| 6 | At the game load on level 1 some questions are partially covered by the mulitiple choice options | I minimised the size of the h1 element to fit the question in the space even for a country with a long name |
+| 7 | After an invalid input on level 2, there was no option to answer the question, only to load the next quesiton | I fixed this by creating a function called emptySpace. This function prevents the loading of another question, I then put this function into a if statement in the checkAnswer function which runs the invalid function if the answer is blank |
+| 8 | When a user filled in the input box using a capital for the first letter the program reads it aas incorrect. | I put all Cpitals and Coutries in the initial list without capitals, I then create a Captitlise function so all Countries and Capitals will print to the DOM capitalised. I then put i the css of the input bos the text-transfrom capitalise, when the user starts to type th first letter is in capitals, this way it is inlikely the program will reject any user input. |
 
 
 
 ### Known Bugs
 
-Originally the form was designed to POST to the code institute form dump. My mentor advised me that it would be better to create a separate page, that shows after the user has submitted the form, this is better for UX. With this I created the booking confirmation page, the form is linked to open the booking-confirmation page when the form is submitted. This however, will not display or confirm the input items.
-
+- The theme button at the head of each pag, changes the colour scheme from blue to red but it won't change back to blue.
+- White space input are invalid, even if the answer is of two words. To rectify that this won't happen to players, I removed all the Cpitals with two words. The bug itself I hope to fix in the future.
+- In level 2 if  user misspells a Capital by even one letter it will come up as incorrect. In the future i would like to create a function or connect an API to solve this.
 
 ## Credits
 
