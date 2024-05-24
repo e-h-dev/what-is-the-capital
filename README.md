@@ -218,6 +218,9 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | 3 | Clicking in the game area loaded next question at wrong time |
 | 4 | After Game over message loaded the game could still be played |
 | 5 | Wrong answers made score below 0 |
+| 6 | At the game load on level 1 some questions are partially covered by the mulitiple choice options |
+| 7 | After an invalid input on level 2, there was no option to answer the question, only to load the next quesiton |
+
 
 
 ### Known Bugs
