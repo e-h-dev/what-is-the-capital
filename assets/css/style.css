@@ -20,11 +20,18 @@ body{
 a{
    color:var(--dark-color); 
    text-decoration: none;
+   font-size: 38px;
+}
+
+a:hover{
+    font-size: 48px;
+    color: rgb(13, 121, 85);
+    cursor: pointer;
 }
 
 li:hover{
     font-size: 48px;
-    color: rgb(10, 99, 69);
+    color: rgb(255, 170, 52);
     cursor: pointer;
 }
 
@@ -50,9 +57,9 @@ li:hover{
     background-image: url("../images/map-background.jpg");
     box-sizing: content-box;
     border-radius: 15px;
-    left:280px;
+    left:20%;
     width:850px;
-    top:20px;
+    top:3%;
 }
 
 /* ---------opaque color over play area image---------*/
