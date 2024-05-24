@@ -3,13 +3,19 @@
 ### lighthouse 
 * Each page has had a lighthouse test and passed 
  #### Lightnouse text images
+ * Home page
  ![index.html lighthouse](assets/validation-images/lighthouse-index.png)
+ * Level 1
  ![level-1.html lighthouse](assets/validation-images/lighthouse-level-1.png)
+ * Level 2
  ![level-2.html lighthouse](assets/validation-images/lighthouse-level-2.png)
 
  ### w3c HTML checks
+ * Home page
  ![index.html html check](assets/validation-images/html-checker-index.png)
+ * Level 1
  ![level-1.html html check](assets/validation-images/html-checker-level-1.png)
+ * Level 2
  ![level-2.html html check](assets/validation-images/html-checker-level-2.png)
 
  ### jigsaw css check
@@ -18,7 +24,9 @@
  ### Jshint Java Script test
  * My code was used with many ES6 java script syntax these were flagged as a warning by jshint.
  * No other warnongs were present.
+ * Level 1
  ![level-1 jshint check](assets/validation-images/jshint-level-1.png)
+ * Level 2
  ![level-2 jshint check](assets/validation-images/jshint-level-2.png)
  
 
