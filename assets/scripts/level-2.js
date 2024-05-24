@@ -3,8 +3,8 @@ creating the neccaserry variables of arrays and
 DOM elements*/ 
 
 //------main game lists
-let countries = ["afghanistan","albania","algeria","angola","argentina","armenia","australia","austria","azerbaijan","bahamas","bahrain","bangladesh","barbados","belarus","belgium","belize","benin","bhutan","bolivia","bosnia and herzegovina","botswana","brazil","bulgaria","burkina faso","burundi","cambodia","cameroon","canada","cape verde","central african republic","chile","china","colombia","comoros","congo","ivory coast","croatia","cuba","cyprus","czech republic","denmark","djibouti","dominica","east timor","ecuador","egypt","england","equatorial guinea","eritrea","estonia","eswatini","federated states of micronesia","fiji","finland","france","gabon","gambia","georgia","germany","ghana","greece","guinea","guinea bissau","guyana","honduras","hungary","iceland","india","indonesia","iran","iraq","ireland","israel","italy","jamaica","japan","jordan","kazakhstan","kenya","kosovo","kuwait","kyrgyzstan","laos","latvia","lebanon","lesotho","liberia","libya","liechtenstein","lithuania","luxembourg","madagascar","malawi","maldives","mali","malta","marshall islands","mauritania","mauritius","moldova","monaco","mongolia","montenegro","morocco","mozambique","myanmar (burma)","namibia","nauru","nepal","netherlands","new zealand","nicaragua","niger","nigeria","north korea","macedonia","northern ireland","norway","oman","pakistan","palau","palestine","paraguay","peru","philippines","poland","portugal","qatar","romania","russia","rwanda","saint kitts and nevis","saint lucia","saint vincent and the grenadines","samoa","saudi arabia","scotland","senegal","serbia","seychelles","sierra leone","singapore","slovakia","slovenia","solomon islands","somalia","south africa","south korea","south sudan","spain","sudan","suriname","sweden","switzerland","syria","taiwan","tajikistan","tanzania","thailand","togo","tunisia","türkiye (turkey)","turkmenistan","tuvalu","uganda","ukraine","united arab emirates","united kingdom","united states","uruguay","uzbekistan","venezuela","vietnam","wales","yemen","zambia","zimbabwe"]
-let capitals = ["kabul","tirana","algiers","luanda","buenosaires","yerevan","canberra","vienna","baku","nassau","manama","dhaka","bridgetown","minsk","brussels","belmopan","porto novo","thimphu","sucre","sarajevo","gaborone","brasilia","sofia","ouagadougou","gitega","phnom penh","yaounde","ottawa","praia","bangui","santiago","beijing","bogota","moroni","brazzaville","yamoussoukro","zagreb","havana","nicosia","prague","copenhagen","djibouti","roseau","dili","quito","cairo","london","malabo","asmara","tallinn","mbabane","palikir","suva","helsinki","paris","libreville","banjul","tbilisi","berlin","accra","athens","conakry","bissau","georgetown","tegucigalpa","budapest","reykjavik","new delhi","jakarta","tehran","baghdad","dublin","jerusalem","rome","kingston","tokyo","amman","astana","nairobi","pristina","kuwait city","bishkek","vientiane","riga","beirut","maseru","monrovia","tripoli","vaduz","vilnius","luxembourg","antananarivo","lilongwe","male","bamako","valletta","majuro","nouakchott","port louis","chisinau","monaco","ulaanbaatar","podgorica","rabat","maputo","nay pyi taw","windhoek","yaren","kathmandu","amsterdam","wellington","managua","niamey","abuja","pyongyang","skopje","belfast","oslo","muscat","islamabad","melekeok","jerusalem","asuncion","lima","manila","warsaw","lisbon","doha","bucharest","moscow","kigali","basseterre","castries","kingstown","apia","riyadh","edinburgh","dakar","belgrade","victoria","freetown","singapore","bratislava","ljubljana","honiara","mogadishu","cape town","seoul","juba","madrid","khartoum","paramaribo","stockholm","bern","damascus","taipei","dushanbe","dodoma","bangkok","lome","tunis","ankara","ashgabat","funafuti","kampala","kiev","dubai","london","washington","montevideo","tashkent","caracas","hanoi","cardiff","sana'a","lusaka","harare"]
+let countries = ["afghanistan","albania","algeria","angola","argentina","armenia","australia","austria","azerbaijan","bahamas","bahrain","bangladesh","barbados","belarus","belgium","belize","benin","bhutan","bolivia","bosnia and herzegovina","botswana","brazil","bulgaria","burkina faso","burundi","cambodia","cameroon","canada","cape verde","central african republic","chile","china","colombia","comoros","congo","ivory coast","croatia","cuba","cyprus","czech republic","denmark","djibouti","dominica","east timor","ecuador","egypt","england","equatorial guinea","eritrea","estonia","eswatini","federated states of micronesia","fiji","finland","france","gabon","gambia","georgia","germany","ghana","greece","guinea","guinea bissau","guyana","honduras","hungary","iceland","india","indonesia","iran","iraq","ireland","israel","italy","jamaica","japan","jordan","kazakhstan","kenya","kosovo","kuwait","kyrgyzstan","laos","latvia","lebanon","lesotho","liberia","libya","liechtenstein","lithuania","luxembourg","madagascar","malawi","maldives","mali","malta","marshall islands","mauritania","mauritius","moldova","monaco","mongolia","montenegro","morocco","mozambique","myanmar (burma)","namibia","nauru","nepal","netherlands","new zealand","nicaragua","niger","nigeria","north korea","macedonia","northern ireland","norway","oman","pakistan","palau","palestine","paraguay","peru","philippines","poland","portugal","qatar","romania","russia","rwanda","saint kitts and nevis","saint lucia","saint vincent and the grenadines","samoa","saudi arabia","scotland","senegal","serbia","seychelles","sierra leone","singapore","slovakia","slovenia","solomon islands","somalia","south africa","south korea","south sudan","spain","sudan","suriname","sweden","switzerland","syria","taiwan","tajikistan","tanzania","thailand","togo","tunisia","türkiye (turkey)","turkmenistan","tuvalu","uganda","ukraine","united arab emirates","united kingdom","united states","uruguay","uzbekistan","venezuela","vietnam","wales","yemen","zambia","zimbabwe"];
+let capitals = ["kabul","tirana","algiers","luanda","buenosaires","yerevan","canberra","vienna","baku","nassau","manama","dhaka","bridgetown","minsk","brussels","belmopan","porto novo","thimphu","sucre","sarajevo","gaborone","brasilia","sofia","ouagadougou","gitega","phnom penh","yaounde","ottawa","praia","bangui","santiago","beijing","bogota","moroni","brazzaville","yamoussoukro","zagreb","havana","nicosia","prague","copenhagen","djibouti","roseau","dili","quito","cairo","london","malabo","asmara","tallinn","mbabane","palikir","suva","helsinki","paris","libreville","banjul","tbilisi","berlin","accra","athens","conakry","bissau","georgetown","tegucigalpa","budapest","reykjavik","new delhi","jakarta","tehran","baghdad","dublin","jerusalem","rome","kingston","tokyo","amman","astana","nairobi","pristina","kuwait city","bishkek","vientiane","riga","beirut","maseru","monrovia","tripoli","vaduz","vilnius","luxembourg","antananarivo","lilongwe","male","bamako","valletta","majuro","nouakchott","port louis","chisinau","monaco","ulaanbaatar","podgorica","rabat","maputo","nay pyi taw","windhoek","yaren","kathmandu","amsterdam","wellington","managua","niamey","abuja","pyongyang","skopje","belfast","oslo","muscat","islamabad","melekeok","jerusalem","asuncion","lima","manila","warsaw","lisbon","doha","bucharest","moscow","kigali","basseterre","castries","kingstown","apia","riyadh","edinburgh","dakar","belgrade","victoria","freetown","singapore","bratislava","ljubljana","honiara","mogadishu","cape town","seoul","juba","madrid","khartoum","paramaribo","stockholm","bern","damascus","taipei","dushanbe","dodoma","bangkok","lome","tunis","ankara","ashgabat","funafuti","kampala","kiev","dubai","london","washington","montevideo","tashkent","caracas","hanoi","cardiff","sana'a","lusaka","harare"];
 
 // -------- DOM element variables-----
 let playArea = document.getElementById("play-area");
@@ -31,7 +31,7 @@ function capitalise(word){
     let remainingLetters = word.slice(1);
     let finalWord = firstToCap + remainingLetters;
     return finalWord;
-};
+}
 
 //--------- game running function will run when page is loaded and when "next question" is clicked
 function playGame(){
@@ -71,7 +71,7 @@ function playGame(){
     // -------------- submit answer event ---------------------------
     sub.addEventListener("click", answerCheck);
 
-};
+}
 
 // ----------------- runs game at page loadtime-------------------
 document.addEventListener("DOMContentLoaded", playGame);
@@ -88,7 +88,7 @@ function hasWhiteSpace(s) {
 function filledIn(){
     sub.innerHTML = "";       
     next.innerHTML = `<button>Next Question</button>`;
-};
+}
 
 //----------submit button will remian if input not valid
 function emptySpace(){
@@ -115,8 +115,8 @@ function answerCheck(checkAnswer){
     }else if(checkAnswer !== chosenCapital){
         incorrect();
         filledIn();
-    };
-};
+    }
+}
 
 // --------- load the next question to the DOM ------
 function nextQuestion(){
@@ -137,8 +137,8 @@ function lifeRemoval(){
     remainingLives.innerHTML = lifeNumber;
     if (lifeNumber == 0){
         gameOver();
-    };
-};
+    }
+}
 
 // ------- function for correct answer ----------
 function correct(){
@@ -161,7 +161,7 @@ function incorrect(){
 function incrementScore(){
     let oldScore = parseInt(document.getElementById('score').innerText);
     document.getElementById("score").innerHTML = ++oldScore;
-};
+}
 
 //-------- subtracts a point for incorrect answer
 function subtractScore(){
@@ -170,9 +170,9 @@ function subtractScore(){
         document.getElementById("score").innerHTML = --oldScore;
     }else{
         document.getElementById('score').innerText = oldScore;
-    };
+    }
     
-};
+}
 
 // ------displays game over message when no more questions or no remaining lives -----
 function gameOver(){
@@ -183,7 +183,7 @@ function gameOver(){
     } else if(countries.length == 0){
         playArea.innerHTML = `<h2 class="game-over">Well done! You have answered all questions correctly!</h2><h3 class="game-over">You have scored <u>${oldScore}</> points!</h3>`;
     }
-};
+}
 
 
 //--------------Jquery code for colour scheme change----------
