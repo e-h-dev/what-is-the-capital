@@ -88,10 +88,6 @@ button{
     display: none;
 }
 
-.game-area-index, .game-area-background-index{
-    height:570px;
-}
-
 .play-buttons{
     padding:50px;
 }
@@ -389,27 +385,6 @@ input:focus{
 }
 
 
-@media screen and (max-width:1180px){
-    .game-area{
-        position:relative;
-        background-image: url("../images/map-background.jpg");
-        box-sizing: content-box;
-        left: 200px;
-        top: 100px;
-        height: 600px;
-        width: 830px;
-        border-radius: 5px;
-    }
-    
-    .game-area-background{
-        background-color: rgba(127, 255, 212, 0.7);
-        position: relative;
-        z-index: 1;
-        box-sizing: content-box;
-        width: 830px;
-        height: 600px;
-    }
-}
 @media screen and (max-width:943px) {
 
     /* -------- styles for all pages----*/
@@ -580,21 +555,9 @@ input:focus{
 
 /*media query for mobile*/
 @media screen and (max-width:600px){
-    .hero{
-        width:100vw;
-    }
 
-    .game-area-index{
-        background-image: url("../images/map-background.jpg");
-        left: 15px;
-        border-radius: 15px;
-        width: 400px;
-        height: 900px;
-    }
-
-    .game-area-background-index{
-        width: 400px;
-        height: 900px;
+    .game-area-index, .game-area-background-index{
+        height:900px;
     }
 
     .nav-button{
@@ -743,17 +706,21 @@ input:focus{
         width:102vw;
     }
 
-    .game-area-index{
+    .game-area{
         background-image: url("../images/map-background.jpg");
+
+    }
+
+    .game-area-index{
         left: 25px;
         border-radius: 15px;
         width: 300px;
-        height: 800px;
+        height: 900px;
     }
 
     .game-area-background-index{
         width: 300px;
-        height: 800px;
+        height: 900px;
     }
 
     .nav-button{
