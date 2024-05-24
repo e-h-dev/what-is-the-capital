@@ -605,6 +605,8 @@ input:focus{
     ul{
         height: 50px;
         padding-bottom:10px;
+        font-size: 24px;
+        margin-left: 0px;
     }
 
     li{
@@ -678,6 +680,17 @@ input:focus{
         height: 400px;
     }
 
+    #multiple-choice{
+        left:0px;
+    }
+
+    #next{
+        left: 120px;
+        top: 350px;
+    }
+
+    /* ------ styles for level 2 ----*/
+
     input{
         width:330px;
         height:80px;
@@ -688,7 +701,6 @@ input:focus{
         position: relative;
         top:50px;
     }
-
 
     .score-section-level-2 h3{
         margin-left: 0px;
