@@ -96,7 +96,7 @@ All Pages on the website are responsive and have:
 
 * A favicon in the browser tab.
 
-  ![favicon](assets/images/logo.png)
+  ![favicon](assets/images/logo-1.png)
 
 
 #### The Home Page
