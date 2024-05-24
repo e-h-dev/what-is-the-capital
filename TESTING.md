@@ -69,18 +69,44 @@ I have gone through each page using google chrome developer tools to ensure that
 | D | I want clear response messages if my answer is correct. | Half a second after a correct answer a clear green message box appears. |
 | E | I want to be shown the correct answer if my answer is incorrect. | If an answer is incorrect a message box comes on the screen, displaying the correct answer |
 
+#### User story gifs
+
+* A
+![Page check](assets/page-images/home-page.png)
+
+* B
+![Responsive Check](assets/validation-images/responsive.png)
+
+* C
+![Nav check](assets/user-story-checks/nav-check.gif)
+
+* D
+![Correct message](assets/user-story-checks/correct-response-check.gif)
+
+* E
+![incorrect message](assets/user-story-checks/incorrect-response-check.gif)
+
 #### Returning Visitor Goals
 
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
-| G | I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site. | At the home page and at the game pages, it is easy to navigate to a higher or lower playing level |
+| F | I want to be able to choose a level of difficulty that I feel is appropriate for me, based on my experience from my first visit to the site. | At the home page and at the game pages, it is easy to navigate to a higher or lower playing level |
+
+* F
+![Level choice](assets/user-story-checks/nav-check.gif)
 
 #### Frequent Visitor Goals
 
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
-| F | I want to be able to adjust the difficulty level to keep improving my knowledge. | After playing at level 1 and learning many new Capitals, the user can easily change to level 2, a more challenging aproach to the quiz. |
+| G | I want to be able to adjust the difficulty level to keep improving my knowledge. | After playing at level 1 and learning many new Capitals, the user can easily change to level 2, a more challenging aproach to the quiz. |
 | H |I want to be able to see my scores, to see how I am performing. | The score are clearly diplayed below the game playing area. The score changes after each valid answer. |
+
+* G
+[Level choice](assets/user-story-checks/nav-check.gif)
+
+* H
+[Score show](assets/user-story-checks/score-show-check.gif)
 
 
 ### Full Testing
